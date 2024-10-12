@@ -1,0 +1,6 @@
+variables:
+  MAIN_FILE_NAME: "main"
+
+include:
+  project: 'FKLab/cicd_dry_templates'
+  file: 'templates/typst_pipeline.yml'

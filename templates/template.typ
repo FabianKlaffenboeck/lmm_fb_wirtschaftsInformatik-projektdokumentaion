@@ -8,7 +8,7 @@
       columns: 3,
       gutter: 1fr,
       align(bottom, smallcaps(mainHeadingContent)),
-      align(bottom, image("../images/logos/HS-OS-Logo-Quer-rgb.jpg", width: auto, height: 20pt)),
+      align(bottom, image("../images/logos/wifi-Logo.png", width: auto, height: 20pt)),
       align(bottom, smallcaps(authorName)),
     )
     #line(length: 100%)    
@@ -71,7 +71,7 @@
 ) = {
   // Set the document's basic properties.
   set document(author: authors.map(a => a.name), title: title)
-  set text(font: "times new roman", lang: "de", size: 11pt)
+  set text(font: "Roboto", lang: "de", size: 11pt)
   show math.equation: set text(weight: 400)
   set math.equation(numbering: "(1)")
   set heading(numbering: "1.1")
@@ -99,16 +99,16 @@
   ////////////////
 
   //Logo
-  image("../images/logos/HS-OS-Logo-Standard-rgb.jpg")
+  image("../images/logos/wifi-Logo.png")
   
   //Title
   align(center)[
-    #v(20pt)
-    #text(14pt, weight: 200, "INSTITUT FÜR DUALE STUDIENGÄNGE") \
-    #v(20pt)
-    #emph(text(16pt, weight: 600, "Praxistransferprojekt im Studiengang "+studiengang))
+    #text(14pt, weight: 400, "Berufsreifeprüfung
+    Fachbereich Informationsmanagement und Medientechnik")
+    #v(10pt)
+    #text(24pt, weight: 600, "PROJEKTARBEIT")
     #v(25pt)
-    #text(2em, weight: 700, title)
+    #text(18pt, weight: 700, title)
   ]
 
   // Author information.
@@ -125,13 +125,8 @@
       "Eingereicht von:",
       ..authors.map(author => [
         #author.name \
-        geb.: #author.birthday in #author.birthplace \
-        #author.address
+        geb.: #author.birthday
       ]),
-      "Matrikelnummer:",
-      text(weight: 800, authors.at(0).matrikelnummer),
-      "Studiengruppe:",
-      text(weight: 800, authors.at(0).studiengruppe),
       "Betreuer:",
       betreuer,
       "Modul:",
