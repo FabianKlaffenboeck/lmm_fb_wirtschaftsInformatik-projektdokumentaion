@@ -52,7 +52,25 @@
 
 
 = Prokektmanegement
-#lorem(2000)
+#lorem(100)
+
+== Projektauftrag
+#lorem(100)
+
+== Projektzielplan
+#lorem(100)
+
+== Projektstrukturplan
+#lorem(100)
+
+== Arbeitspaket-Spezifikation
+#lorem(100)
+
+== Projektmeilensteinplan
+#lorem(100)
+
+== Projektkostenplan
+#lorem(100)
 
 
 = Hauptteil
