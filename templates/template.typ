@@ -177,15 +177,15 @@
   }})
 
   //Tabellenverzeichnis, falls mindestens eine Tabelle existiert 
-  locate(loc => {
-    let figures = query(selector(figure.where(kind: table)).after(loc), loc)
-    if figures.len() > 0 {
-    heading(outlined: true, numbering: none,[Tabellenverzeichnis])
-    outline(
-          title: none,
-    target: figure.where(kind: table),
-    )
-  }})
+  // locate(loc => {
+  //   let figures = query(selector(figure.where(kind: table)).after(loc), loc)
+  //   if figures.len() > 0 {
+  //   heading(outlined: true, numbering: none,[Tabellenverzeichnis])
+  //   outline(
+  //         title: none,
+  //   target: figure.where(kind: table),
+  //   )
+  // }})
 
   //Abkürzungsverzeichnis, falls mindestens eine Abkürzung existiert
   if acronyms.len() > 0 {
