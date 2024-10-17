@@ -2,7 +2,6 @@
 #import "templates/acronyms.typ": *
 
 #let acronyms = (
-  "PTP": ("Praxistransferprojekt", "Praxistransferprojekte"),
 )
 
 #let appendix = [
@@ -19,7 +18,7 @@
 ]
 
 #show: project.with(
-  title: "Thema der Diplomarbeit",
+  title: "CAN-Monitoring Tool mit Web Technilogie",
   authors: (
     (
     name: "Fabain Klaffenboeck", 

@@ -1,32 +1,38 @@
 #import "@preview/pintorita:0.1.2"
+#import "@preview/acrostiche:0.3.3": *
 
 = Prokektmanegement
 #lorem(100)
 
 == Projektauftrag
+
+=== Projektstartereignis
+
 #figure(
   table(
     columns: (1fr, 1fr),
     inset: 10pt,
     align: left,
-    [Projektstartereignis: #list([test],[test])], [Projektstarttermin:],
-    [Inhaltliches Projektendereignis:], [Projektendtermine],
-    [Projektziele:], [Nicht-Projektziele:],
-    [Hauptaufgaben (Projektphasen):], [],
-    [ProjektauftraggeberIn:], [ProjektleiterIn:],
-    [Projektteam:], []
+    [Projektstartereignis: #list([Abklärung der Funtionne mit Ziehlgruppe])], [Projektstarttermin: #list([16.10.2024])],
+    [Inhaltliches Projektendereignis: #list([Testveröffentlichung auf GitHub])], [Projektendtermine: #list([25.01.2025])],
+    [Projektziele: #list([Erstellung einer CAN-monitoring Anwendung])], [Nicht-Projektziele: #list([Test], [Bewerbung], [Design])],
+    [Hauptaufgaben (Projektphasen): #list([TODO])], [],
+    [ProjektauftraggeberIn: #list([FKLab])], [ProjektleiterIn: #list([Fabian Klaffenböck])],
+    [Projektteam: #list([Fabian Klaffenböck])], []
     ),
 )
 
+#pagebreak()
 == Projektzieleplan
 #figure(
   table(
-    columns: (1fr, 1fr, 1fr),
+    columns: (1fr, 1fr),
     inset: 10pt,
     align: left,
-    [*Zielart*], [*Projektziele*], [*Adaptierte Projektziele per ...*],
-    [Ziele: #list([Hauptziele],[Zusatzziele])], [], [],
-    [Nicht-Ziele:], [], []
+      [*Zielart*], [*Projektziele*],
+      [Hauptziele:], [#list([TODO])],
+      [Zusatzziele:], [#list([TODO])],
+      [Nicht-Ziele:], [#list([Wartung des Tools], [Dauerhafte download bereitstellung], [Implementierung neuer Funktionen])],
     ),
 )
 
@@ -103,15 +109,16 @@ mindmap
 == Projektmeilensteinplan
 #figure(
   table(
-    columns: (0.5fr, 1fr, 0.75fr, 0.75fr, 0.75fr),
+    columns: (0.25fr, 1fr, 0.65fr, 0.60fr, 0.55fr),
     inset: 10pt,
     align: left,
     table.header([PSP-Code], [Meilenstein], [Basis-termine], [Aktuelle Plantermine], [Ist Termine]),
-    [],[],[],[],[],
-    [],[],[],[],[],
-    [],[],[],[],[],
-    [],[],[],[],[],
-    [],[],[],[],[],
+    [1],[Setup von Electron/Vite],[13.10.2024],[],[13.10.2024],
+    [2],[Implement Shadcn],[],[],[],
+    [3],[Dynamic-grid ist verfügbar],[],[],[],
+    [4],[Node-native Lib für Kvaser],[],[],[],
+    [5],[Einlesen erster Can Nachrichten],[],[],[],
+    [6],[TODO],[],[],[],
     ),
 )
 
