@@ -51,5 +51,8 @@
 
 // #include "./chapters/Vertiefungsteil.typ"
 
+
+#include "./chapters/Besprechungen.typ"
+
 // #include "./chapters/Zusammenfassung.typ"
 
