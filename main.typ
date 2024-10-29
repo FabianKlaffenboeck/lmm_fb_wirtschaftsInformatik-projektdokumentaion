@@ -2,6 +2,7 @@
 #import "templates/acronyms.typ": *
 
 #let acronyms = (
+    "CAN": ("Controller Area Network"),
 )
 
 #let appendix = [
@@ -39,7 +40,7 @@
 //Hauptteil - Hier wird der Inhalt geschrieben//
 ////////////////////////////////////////////////
 
-// #include "./chapters/Einleitung.typ"
+#include "./chapters/Einleitung.typ"
 
 // #include "./chapters/Anlass.typ"
 
@@ -50,7 +51,6 @@
 // #include "./chapters/Hauptteil.typ"
 
 // #include "./chapters/Vertiefungsteil.typ"
-
 
 #include "./chapters/Besprechungen.typ"
 
