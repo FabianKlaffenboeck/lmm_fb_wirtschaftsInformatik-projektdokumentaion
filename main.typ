@@ -5,17 +5,10 @@
     "CAN": ("Controller Area Network"),
 )
 
-#let appendix = [
-    == Erster  Anhang Appendix <anhang1>
-    test test 
-    #pagebreak()
-
-    == Zweiter Anhang  <anhang2>
-      Derzeit wird noch kein PDF Embedding unterstützt. Um PDFs einzubinden, müssen diese als Bild eingebunden werden (z.B. PDF2SVG).
-    ]
-
 #let abstract = [
-  #lorem(200)
+  In diesem Projekt wird ein performantes CanBus Tool entwickelt, wälches in seiner Funtionalität bereits exestriender lösungen, zb von Vector ähnelt.
+  Dabei steht allerdings die Kostenefizienz im Vordergrung, da Ählichte Tools sehr Preisintensiv sind.
+  Die Implementierung erfolgt unter Verwendung moderner Webtechnologien, einschließlich React für die Benutzeroberfläche, Node native für die Komunitaion mit der Hardware und Electron für die plattformübergreifende Desktop-Anwendung. Ziel des Projekts ist es, eine benutzerfreundliche, intuitive Oberfläche zu schaffen, die es Nutzern ermöglicht, CanBus Daten einfach zu visualisieren, zu analysieren und zu schicken.
 ]
 
 #show: project.with(
@@ -32,7 +25,6 @@
   language: "de",
   abstract: abstract,
   acronyms: acronyms,
-  appendix: appendix,
 )
 #init-acronyms(acronyms)
 
@@ -42,17 +34,17 @@
 
 #include "./chapters/Einleitung.typ"
 
-// #include "./chapters/Anlass.typ"
+#include "./chapters/Anlass.typ"
 
-// #include "./chapters/Zielsetzung.typ"
+#include "./chapters/Zielsetzung.typ"
 
 #include "./chapters/Prokektmanegement.typ"
 
-// #include "./chapters/Hauptteil.typ"
+#include "./chapters/Hauptteil.typ"
 
-// #include "./chapters/Vertiefungsteil.typ"
+#include "./chapters/Vertiefungsteil.typ"
 
 #include "./chapters/Besprechungen.typ"
 
-// #include "./chapters/Zusammenfassung.typ"
+#include "./chapters/Zusammenfassung.typ"
 

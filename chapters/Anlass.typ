@@ -1,2 +1,2 @@
-== Anlass und Problemhintergrund
+= Anlass und Problemhintergrund
 #lorem(3000)

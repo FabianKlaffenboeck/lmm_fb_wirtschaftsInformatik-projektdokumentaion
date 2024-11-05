@@ -20,25 +20,23 @@ Der Bedarf an einem effektiven Überwachungstool wird durch die zunehmende Kompl
 Das im Rahmen dieses Projekts entwickelte CAN-Bus-Monitoring-Tool basiert auf bestehenden Lösungen wie dem Canalyser von Vector, der als Benchmark für Leistungsfähigkeit und Benutzerfreundlichkeit in der CAN-Diagnosetechnologie dient. Ziel dieses Projekts ist die Schaffung eines umfassenden Monitoring-Tools, das eine Vielzahl von Funktionen bietet, darunter Datenaufzeichnung, Protokollierung, Visualisierung und Analyse der CAN-Daten in Echtzeit. Damit können Benutzer den Status des Netzwerks überwachen, Fehlfunktionen erkennen und die Systemleistung optimieren.
 
 
-// == Projektziele
+== Projektziele
 
-// Die Hauptziele des Projekts sind wie folgt:
+Die Hauptziele des Projekts sind wie folgt:
 
-// #list(
-//   [
-//     Entwicklung eines benutzerfreundlichen Tools: Das Monitoring-Tool soll eine intuitive Benutzeroberfläche bieten, die es Ingenieuren und Technikern ermöglicht, CAN-Daten einfach zu erfassen und zu analysieren, ohne dass umfangreiche Schulungen erforderlich sind.
-// ],[
-//   Entwicklung eines benutzerfreundlichen Tools: Das Monitoring-Tool soll eine intuitive Benutzeroberfläche bieten, die es Ingenieuren und Technikern ermöglicht, CAN-Daten einfach zu erfassen und zu analysieren, ohne dass umfangreiche Schulungen erforderlich sind.
-// ],[
-//   Echtzeit-Überwachung und Analyse: Das Tool wird in der Lage sein, Daten in Echtzeit zu erfassen und zu analysieren, um sofortige Rückmeldungen zu den Netzwerkbedingungen und den Leistungsparametern der ECUs zu geben.
-// ],[
-//   Datenvisualisierung: Eine klare und informative Visualisierung der Daten ist entscheidend, um Trends und Anomalien leicht erkennen zu können. Das Tool wird verschiedene Visualisierungstechniken einsetzen, um die Informationen zugänglich und verständlich zu machen.
-// ],[
-//   Fehlerdiagnose und Protokollierung: Ein wesentliches Merkmal des Tools wird die Fähigkeit zur Fehlerdiagnose sein, die es Benutzern ermöglicht, Protokolle von CAN-Kommunikationsereignissen zu führen und Probleme effektiv zu identifizieren und zu beheben.
-// ],[
-//   Erweiterbarkeit und Flexibilität: Das Tool soll modular aufgebaut sein, um zukünftige Erweiterungen und Anpassungen an neue Technologien und Standards zu ermöglichen.
-// ]
-// )
+#list(
+[
+  Entwicklung eines benutzerfreundlichen Tools: Das Monitoring-Tool soll eine intuitive Benutzeroberfläche bieten, die es Technikern einfach
+  ermöglicht, CAN Daten zu erfassen und zu analysieren, ohne vorher eine Langwireige und Kostenintensive Schlulung durchlaufen zu haben.
+],[
+  Echtzeit-Überwachung und Analyse: Das Tool muss in der der lage sein einen CanBus über 10 Minuten auzuzeichnen und Grafsich darzustellen.  
+],[
+  Datenvisualisierung: Die empfangenenn Frames müssen Grafisch ansprechend Dargestellt werden, und es muss übersichlich sein welche Daten wo genau angezeift werden.
+],[
+  CanBus Architektur: Es muss möglich sein den Bus in logiche Einheiten (Channels und Nodes) zu unterteilen, und mit hilfe einer so genannten DBC Datei aufzuschlüssenln.
+],[
+  Erweiterbarkeit und Flexibilität: Das Tool soll modular aufgebaut sein, um zukünftige Erweiterungen und Anpassungen an neue Technologien und Standards zu ermöglichen.
+])
 
 == Technologischer Rahmen
 
@@ -53,33 +51,20 @@ Diese Erweiteung greift über NAPI auf die V8 Engine zu, und ist in C++ geschrei
 Die Tadsache dass das Prugin in C++ geschreiben ist, ermöglicht es seinerseits auf die,
 von Kvaser bereit gestellte, API der CanBus zu USB wandler zuzugreigen. 
 
-// == Methodik
+== Methodik
 
-// Die Methodik für die Entwicklung des Monitoring-Tools umfasst mehrere Phasen:
+Die Methodik für die Entwicklung des Monitoring-Tools umfasst mehrere Phasen:
 
-// #list(
-//   [
-//     Anforderungsanalyse: In dieser Phase werden die spezifischen Anforderungen an das Tool definiert. Dies beinhaltet die Identifizierung der Benutzerbedürfnisse, der gewünschten Funktionen und der technischen Rahmenbedingungen.
-// ],[
-//   Entwurf und Planung: Auf Basis der Anforderungsanalyse wird ein detaillierter Entwurf des Tools erstellt, der sowohl die Softwarearchitektur als auch die Benutzeroberfläche umfasst.
-// ],[
-//   Implementierung: In dieser Phase erfolgt die eigentliche Programmierung des Tools. Hierbei werden die verschiedenen Module entwickelt und integriert, einschließlich der Datenerfassungs- und Analysefunktionen.
-// ],[
-//   Testen und Validierung: Nach der Implementierung wird das Tool gründlich getestet, um sicherzustellen, dass alle Funktionen korrekt arbeiten und die Benutzerfreundlichkeit gegeben ist. Dies umfasst sowohl Unit-Tests als auch Integrationstests.
-// ],[
-//   Dokumentation: Eine umfassende Dokumentation wird erstellt, um die Benutzer bei der Nutzung des Tools zu unterstützen und zukünftige Entwickler bei der Wartung und Erweiterung des Systems zu informieren.
-// ]
-// )
-
-// == Bedeutung des Projekts
-
-// Das CAN Bus Monitoring Tool hat nicht nur einen hohen praktischen Nutzen für Ingenieure und Techniker, sondern trägt auch zur Weiterentwicklung von Diagnose- und Überwachungstechnologien in der Automobilindustrie und anderen Bereichen bei. Durch die Verbesserung der Effizienz und Zuverlässigkeit von CAN-Netzwerken werden nicht nur die Kosten gesenkt, sondern auch die Sicherheit und Leistungsfähigkeit moderner Fahrzeuge und Systeme erhöht. Die im Rahmen dieses Projekts entwickelten Technologien können auch auf andere Bereiche wie die industrielle Automatisierung, Robotik und das Internet der Dinge (IoT) angewendet werden.
-
-// == Ausblick
-
-// Abschließend lässt sich sagen, dass das CAN Bus Monitoring Tool einen wichtigen Schritt in Richtung einer besseren Überwachung und Analyse von CAN-Netzwerken darstellt. Mit der ständigen Weiterentwicklung von Technologien und der zunehmenden Komplexität von Fahrzeugen und Systemen ist die Nachfrage nach leistungsfähigen Monitoring- und Diagnosetools höher denn je. Dieses Projekt wird nicht nur die bestehenden Herausforderungen adressieren, sondern auch den Weg für zukünftige Innovationen in der Kommunikations- und Datentechnologie ebnen.
-
-// In den folgenden Kapiteln dieses Berichts werden die spezifischen Details der Implementierung, die Testergebnisse und die endgültigen Evaluierungen des Tools dargelegt, um einen umfassenden Überblick über die Entwicklung und den Betrieb des CAN Bus Monitoring Tools zu geben.
-
-
-// #lorem(2000)
+#list(
+[
+  Anforderungsanalyse: In dieser Phase werden die spezifischen Anforderungen an das Tool definiert. Dies beinhaltet die Identifizierung der Benutzerbedürfnisse, dergewünschten Funktionen und der technischen Rahmenbedingungen.
+],[
+  Entwurf und Planung: Auf Basis der Anforderungsanalyse wird ein detaillierter Entwurf des Tools erstellt, der sowohl die Softwarearchitektur als auch die Benutzeroberfläche umfasst.
+],[
+  Implementierung: In dieser Phase erfolgt die eigentliche Programmierung des Tools. Hierbei werden die verschiedenen Module entwickelt und integriert, einschließlich der Datenerfassungs- und Analysefunktionen.
+],[
+  Testen und Validierung: Nach der Implementierung wird das Tool gründlich getestet, um sicherzustellen, dass alle Funktionen korrekt arbeiten und die Benutzerfreundlichkeit gegeben ist.
+],[
+  Dokumentation: Eine umfassende Dokumentation wird erstellt, um die Benutzer bei der Nutzung des Tools zu unterstützen und zukünftige Entwickler bei der Wartung und Erweiterung des Systems zu informieren.
+]
+)

@@ -228,9 +228,9 @@
   // Bibliography
   bibliography(title: [Literaturverzeichnis], style: "ieee","../sources.bib")
 
-  if appendix.fields().len() > 0 {
-  renderAppendix(appendix)
-  }
+  // if appendix.fields().len() > 0 {
+  // renderAppendix(appendix)
+  // }
   
   pagebreak()
   eidesstattliche_erklaerung(title)
