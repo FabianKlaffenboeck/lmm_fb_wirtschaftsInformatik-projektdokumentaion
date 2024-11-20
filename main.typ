@@ -36,9 +36,9 @@
 
 // #include "./chapters/Zielsetzung.typ"
 
-// #include "./chapters/Prokektmanegement.typ"
+#include "./chapters/Prokektmanegement.typ"
 
-// #include "./chapters/Hauptteil.typ"
+#include "./chapters/Hauptteil.typ"
 
 // #include "./chapters/Vertiefungsteil.typ"
 
