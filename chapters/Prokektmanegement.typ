@@ -114,7 +114,7 @@ mindmap
     align: left,
     table.header([PSP-Code], [Meilenstein], [Basis-termine], [Aktuelle Plantermine], [Ist Termine]),
     [1],[Setup von Electron/Vite],[13.10.2024],[],[13.10.2024],
-    [2],[Implement Shadcn],[],[],[],
+    [2],[Implement ShadCn],[],[],[],
     [3],[Dynamic-grid ist verfügbar],[],[],[],
     [4],[Node-native Lib für Kvaser],[],[],[],
     [5],[Einlesen erster Can Nachrichten],[],[],[],
