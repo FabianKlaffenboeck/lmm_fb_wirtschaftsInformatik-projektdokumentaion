@@ -5,8 +5,8 @@
 == Einleitung
 
 In der heutigen vernetzten Welt spielen Kommunikationssysteme eine entscheidende Rolle in der Automatisierung, im Automotive und in industrial Anwendungen.
-Eines der am häufigsten verwendeten Standards für die Kommunikation zwischen Steuergeräten in Fahrzeugen und anderen Geräten ist der #acr("CAN") Bus.
-Seit der Erfindund von Bosch, ist der #acr("CAN") Bus vorallem im automotive bereich zu finden, wird aber auch vermehrt in andreren Industrie bereichen eingesetzt.
+Eines der am häufigsten verwendeten Standards für die Kommunikation zwischen Steuergeräten in Fahrzeugen und anderen Geräten ist der CAN Bus.
+Seit der Erfindund von Bosch, ist der CAN Bus vorallem im automotive bereich zu finden, wird aber auch vermehrt in andreren Industrie bereichen eingesetzt.
 Darauf aufbauend gibt es, protokolle wie CAN XCP, CanOpen und viele mehr.
 
 Das CAN-Bussystem ermöglicht die Interaktion mehrerer ECUs über ein gemeinsames Kommunikationsmedium. Diese Fähigkeit zum Datenaustausch ist für moderne Fahrzeuge von entscheidender Bedeutung, da sie zahlreiche elektronische Funktionen koordinieren, darunter Motorsteuerung, Bremsen, Fahrerassistenzsysteme und Infotainment. Die Integration dieser Systeme bringt jedoch auch Herausforderungen mit sich, insbesondere in Bezug auf Fehlerbehebung, Leistungsüberwachung und Datenanalyse. Hier kommt das CAN-Bus-Überwachungstool ins Spiel, das diese Herausforderungen bewältigen und die Effizienz und Zuverlässigkeit von CAN-Netzwerken verbessern soll.

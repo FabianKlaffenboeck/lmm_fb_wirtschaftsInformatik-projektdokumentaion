@@ -1,9 +1,7 @@
 #import "templates/template.typ": *
 #import "templates/acronyms.typ": *
 
-#let acronyms = (
-    "CAN": ("Controller Area Network"),
-)
+#let acronyms = ()
 
 #let abstract = [
   In diesem Projekt wird ein performantes CanBus Tool entwickelt, wälches in seiner Funtionalität bereits exestriender lösungen, zb von Vector ähnelt.
@@ -12,7 +10,7 @@
 ]
 
 #show: project.with(
-  title: "CAN-Monitoring Tool mit Web Technilogie",
+  title: "CAN-Monitoring Tool mit Web Technilogien",
   authors: (
     (
     name: "Fabain Klaffenboeck", 
@@ -36,15 +34,15 @@
 
 #include "./chapters/Anlass.typ"
 
-#include "./chapters/Zielsetzung.typ"
+// #include "./chapters/Zielsetzung.typ"
 
-#include "./chapters/Prokektmanegement.typ"
+// #include "./chapters/Prokektmanegement.typ"
 
-#include "./chapters/Hauptteil.typ"
+// #include "./chapters/Hauptteil.typ"
 
-#include "./chapters/Vertiefungsteil.typ"
+// #include "./chapters/Vertiefungsteil.typ"
 
-#include "./chapters/Besprechungen.typ"
+// #include "./chapters/Besprechungen.typ"
 
-#include "./chapters/Zusammenfassung.typ"
+// #include "./chapters/Zusammenfassung.typ"
 

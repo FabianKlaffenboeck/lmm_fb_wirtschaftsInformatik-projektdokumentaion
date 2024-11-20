@@ -177,15 +177,15 @@
   }})
 
   //Tabellenverzeichnis, falls mindestens eine Tabelle existiert 
-  // locate(loc => {
-  //   let figures = query(selector(figure.where(kind: table)).after(loc), loc)
-  //   if figures.len() > 0 {
-  //   heading(outlined: true, numbering: none,[Tabellenverzeichnis])
-  //   outline(
-  //         title: none,
-  //   target: figure.where(kind: table),
-  //   )
-  // }})
+  locate(loc => {
+    let figures = query(selector(figure.where(kind: table)).after(loc), loc)
+    if figures.len() > 0 {
+    heading(outlined: true, numbering: none,[Tabellenverzeichnis])
+    outline(
+          title: none,
+    target: figure.where(kind: table),
+    )
+  }})
 
   //Abkürzungsverzeichnis, falls mindestens eine Abkürzung existiert
   if acronyms.len() > 0 {
@@ -219,19 +219,19 @@
   //End
 
   // Continue roman numbering for the appendix.
-  set page(numbering: "I", number-align: center, margin: auto, header: none)
-  locate(loc => {
-  let AbsolutePageNumberOfFirstBodyPage = query(selector(heading.where(numbering: "1.1")).before(loc), loc).first().location().page()
-  counter(page).update(AbsolutePageNumberOfFirstBodyPage - 1)
-  })
+  // set page(numbering: "I", number-align: center, margin: auto, header: none)
+  // locate(loc => {
+  // let AbsolutePageNumberOfFirstBodyPage = query(selector(heading.where(numbering: "1.1")).before(loc), loc).first().location().page()
+  // counter(page).update(AbsolutePageNumberOfFirstBodyPage - 1)
+  // })
 
   // Bibliography
-  bibliography(title: [Literaturverzeichnis], style: "ieee","../sources.bib")
+  // bibliography(title: [Literaturverzeichnis], style: "ieee","../sources.bib")
 
   // if appendix.fields().len() > 0 {
   // renderAppendix(appendix)
   // }
   
-  pagebreak()
+  // pagebreak()
   eidesstattliche_erklaerung(title)
   }
