@@ -34,15 +34,15 @@
 
 #include "./chapters/Anlass.typ"
 
-// #include "./chapters/Zielsetzung.typ"
+#include "./chapters/Zielsetzung.typ"
 
 #include "./chapters/Prokektmanegement.typ"
 
 #include "./chapters/Hauptteil.typ"
 
-// #include "./chapters/Vertiefungsteil.typ"
+#include "./chapters/Vertiefungsteil.typ"
 
-// #include "./chapters/Besprechungen.typ"
+#include "./chapters/Besprechungen.typ"
 
-// #include "./chapters/Zusammenfassung.typ"
+#include "./chapters/Zusammenfassung.typ"
 

@@ -26,5 +26,4 @@ Durch die breite Verfügbarkeit und die zugängliche Gestaltung wird ApolloLink 
 #linebreak()
 Insgesamt bietet ApolloLink die Chance, die Landschaft der CAN-Bus-Analyse-Tools nachhaltig zu verändern und eine Brücke zwischen den Bedürfnissen von Hobbyentwicklern, Start-ups und großen Unternehmen zu schlagen.
 
-
-// #lorem(3000)
+// #lorem(500)

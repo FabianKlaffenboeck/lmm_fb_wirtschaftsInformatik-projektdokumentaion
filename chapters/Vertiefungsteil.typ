@@ -1,3 +1,3 @@
 = Vertiefungsteil
-#lorem(6000)
+#lorem(7000)
 

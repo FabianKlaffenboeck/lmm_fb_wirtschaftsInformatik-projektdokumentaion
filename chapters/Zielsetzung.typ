@@ -1,2 +1,2 @@
 = Zielsetzung
-#lorem(3000)
+#lorem(2000)
