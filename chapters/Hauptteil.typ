@@ -38,4 +38,31 @@ der jedes mal aufgerufen wird wen eine Can-Bus Nachricht empfangen wird.
 === Für React (TypeScript)
   Um eine Einheitliche Linen im bezug auf die Werkzeug-wahl zu halten, fiel die Wahl für den Web-teil ebenfalls auf ein JetBrains Produkt. In diesem fall allerdings auf WebStorm. Dabei handelt es sich ebenfalls um ein Hochperformantes System, das sehr Hilfreiche Funktionen für den umgang mit den neusten Web Trends bieted. Zum beispiel ist das gesamte Node (NPM, NPX) Ökosystem tief verankert und funktioniert Einwandfrei.
 
+== CiCd Pipeline
+  Um die qualität des Codes zu haren, und dauernd zu überprüfung wurde entschieden auf eine CiCd Pipeline, implementiert in GitLab, zu setzen. 
+  #linebreak()
+  Insgesammt giebt es 5 wichtige Abschnitte:
+  #list([Linting],[Testing],[NodeGyp bauen],[Electron bauen],[React App bauen]) 
+
+#pagebreak()
+
+=== Linting
+  In deisem Schritt werden die sehr srengen Regeln, die and die Code Qualität gestellt werden überprüft. Besplieslweise dürfen keine Variablen defineirt werden, die nicht werwendet werden. Zudem gibt es eine regel die "cont" priorisirt, was bedeuted das aich die Sicherheit im Code erhöt wird, da es schwiriger wird ungewollt auf Variablen zuzugreifen und deise zu verändern.   
+
+=== Testing
+  Natürlich gehören zur feststellung einer guten code-qualität auch tests, die ebenfalls bei jedem Commit ausgeführ werden. Um resourcen bei der Entwichlung zu sparen wurde auf teifer legende test verzichted. Die Tests beschränken sich derzeit nur auf speichersicherheit, vorallem in C++ Node-native Teil.   
+
+=== NodeGyp bauen
+  Da es sich bei NodeNative im zusammenhang mit NAPI und NodeGyp um den Betroebssystem spezifischen Teil handelt, muss deiser teil auch aum dem ziel OS gebaut werden.
+  Da es sich bei miener GitLab Infrastruktur alerding ausschließlich um Docker Executor handelt, werwieß sich deis als recht Zeitintensef. Die lösung war, den build Schritt in eienm Docker Container mittels der Linux Kompatiblitätschicht "WINE" auszulagern. Daruch wird eien Wirdowsn umgebung vorgegaukelt, obwohl esigentlich Ein UNIX System verwendet wird. 
+
+=== React App bauen
+  Die Pipeline um die haupt app zu bauen besthet aus Volgenden Schritten: NPM Pakete Herunterladen, TSX laufen lassen und einse fertige Single page application mittels Rollup Kompilieren lassen. #linebreak()
+  Rollup kümmert sich dabie mittels Treeshaking Algorythmus darum das die Codebase auf ein minimum zusammengekürtz wird, und Code der durch den Kompierschritt unnötig generiert wurde, wirder entfert wird.   
+
+=== Die fertige APP mittels Electron bauen
+  Bei Electron handelt es sich um eine Laufzeit Umgebung die es mittels der NodeJs V8 Umgebung erlaubt Web Code (also Javascript und HTML) nativ auf Windows Mac oder Linux laufen zu lassen. Zudem erlaubt dieses Framework das auch Node-Native librarys verwendet werden künnen. Normalerweise ist die Verwendung diesen naämlich nur auf Vanilla Node beschränkt. Um sicherzustellen das die Native Librarys auch bei upgrade der Electron version problemlos verwendet werden können, wurde auf die NAPI schnitstelle gesetzt, die durch ihre hohe versionsübergreifende stabilität überzeugt.
+
+
+
 // #lorem(6000)
