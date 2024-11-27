@@ -137,7 +137,7 @@
   ))
 
   // Abstract page.
-  set page(numbering: "I", number-align: center)
+  set page(numbering: "1", number-align: center)
   v(1fr)
   align(center)[
     #heading(
@@ -177,15 +177,15 @@
   }})
 
   //Tabellenverzeichnis, falls mindestens eine Tabelle existiert 
-  locate(loc => {
-    let figures = query(selector(figure.where(kind: table)).after(loc), loc)
-    if figures.len() > 0 {
-    heading(outlined: true, numbering: none,[Tabellenverzeichnis])
-    outline(
-          title: none,
-    target: figure.where(kind: table),
-    )
-  }})
+  // locate(loc => {
+  //   let figures = query(selector(figure.where(kind: table)).after(loc), loc)
+  //   if figures.len() > 0 {
+  //   heading(outlined: true, numbering: none,[Tabellenverzeichnis])
+  //   outline(
+  //         title: none,
+  //   target: figure.where(kind: table),
+  //   )
+  // }})
 
   //Abkürzungsverzeichnis, falls mindestens eine Abkürzung existiert
   if acronyms.len() > 0 {
@@ -210,8 +210,7 @@
   // Main body.
   set block(above: 1.5em, below: 2em) //heading space
   set par(justify: true)
-  set page(numbering: "1", number-align: center, margin: (top: 120pt, bottom: 80pt),header: getHeader(authors.at(0).name))
-  counter(page).update(1)
+  set page(number-align: center, margin: (top: 120pt, bottom: 80pt),header: getHeader(authors.at(0).name))
 
   //main body (main.typ)
   body
