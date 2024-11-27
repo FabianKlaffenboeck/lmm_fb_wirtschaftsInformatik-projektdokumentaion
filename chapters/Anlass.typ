@@ -26,4 +26,20 @@ Durch die breite Verfügbarkeit und die zugängliche Gestaltung wird ApolloLink 
 #linebreak()
 Insgesamt bietet ApolloLink die Chance, die Landschaft der CAN-Bus-Analyse-Tools nachhaltig zu verändern und eine Brücke zwischen den Bedürfnissen von Hobbyentwicklern, Start-ups und großen Unternehmen zu schlagen.
 
-// #lorem(500)
+#pagebreak()
+
+== Forschung und bestehende Lösungen
+
+Wen man sich die, wie oben beschrebene, Marktlage nocheinmal genauer ansihet, stellt man zunehmend fest, dass es nur eine kliene hand voll großer Unternehmen weltweit gibt, die sich zu einer Monopolmacht herauskristalieriert haben. Dies erlaubt Ihnen, diese Marktlage auszunitzen, bezihungsweise sich auf ihrern Position auszuruhen. Daher gibt es bis heute eigentlich keine große konkurenz, worunter alle aktuell leiden. #linebreak()
+Daher ist die Forschungsfrage, ob es möglichn ist, ein solch komplexes Tool mit top modernen Technologien aus den Web-Bereich zumzusetzen auch für andere Unternehmen von Interesse, da es möglich gemacht werden würde, auf andere Entwicklungs-resourcen zurückgreifen, da man nicht auf einen veraltetetn Tech-Stack angewieden ist.  
+
+== Lernziel und persönliche Entwicklung
+
+Da dies das erste Projekt darstellt, welchen sich mit diesem späziellen tech Stack Realisiere, erhofffe ich mir durch dieses Projekt vorallem einige wichtige leassons learned. Was für mcih von besonderer beduetung ist, ist die einbettung einer C++ Codebase mittels Nodenative in eine Electron-React Anwendung. Dies ist besonder interessant, da sich dadurch unzähliche Verwendungszwecke, und die damit verbunden Projektmöglichkeiten eröffnen. #linebreak()
+Ausßerdem ist es sehr spannend ein Gefühl für die Technologie und, deren performande vor und Nachteile zu bekommen. Auch gewinnt die intensive Auseinandersetzung mit dem Electron Frameworke zunemhmend mehr an wichtichkeit, da alle Zeichen zur Zeit darauf stehen, neue Apps außschlislich auf web-basis zu entwichkeln, um netwichker Resourcen besser zum einsatz zu bringen.   
+
+== Langfristige Ziele
+
+Durch dieses Projekt wird eine langfristige Verbesserung in der Open-Source-Community angestrebt, insbesondere in Bezug auf die Nutzung des CAN-Bus in Hobbyprojekten. Die Open-Source-Version bleibt dauerhaft auf GitHub verfügbar, was eine breite Nutzung und den Austausch innerhalb der Community fördert. Langfristig soll dies auch das Interesse von Unternehmen wecken. #linebreak()
+Für Business-Kunden sind spezielle Funktionspakete vorgesehen, die eine einfache Anpassung an die individuellen Bedürfnisse der Endnutzer ermöglichen. Diese Erweiterungen bieten zusätzliche Funktionen und Support-Optionen, die besonders für professionelle Anwendungen interessant sind. #linebreak()
+Die einfache Anschaffung und die niedrigen Einstiegshürden fördern die Akzeptanz sowohl bei Hobbyisten als auch bei Unternehmen. So wird das Produkt zunehmend in verschiedenen Branchen verbreitet und findet langfristig auch kommerzielle Anwendung.
