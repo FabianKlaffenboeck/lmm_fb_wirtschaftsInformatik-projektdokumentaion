@@ -47,7 +47,7 @@ Key Activities:
     [Inhaltliches Projektendereignis: #list([Testveröffentlichung auf GitHub])], [Projektendtermine: #list([25.01.2025])],
     [Projektziele: #list([Erstellung einer CAN-monitoring Anwendung])], [Nicht-Projektziele: #list([Test], [Bewerbung], [Design])],
     [Hauptaufgaben (Projektphasen): #list([Werden mittels Scrum im laufe der Entwichlung bestimmt.])], [],
-    [ProjektauftraggeberIn: #list([FKLab])], [ProjektleiterIn: #list([Fabian Klaffenböck])],
+    [ProjektauftraggeberIn: #list([eWolveLabs])], [ProjektleiterIn: #list([Fabian Klaffenböck])],
     [Projektteam: #list([Fabian Klaffenböck])], []
     ),
 )
@@ -101,7 +101,7 @@ mindmap
 mindmap
 @param layoutDirection TB
 + Branding
-++ App nach Brandguids von FKLab designen
+++ App nach Brandguids von eWolveLabs designen
 ```
 
 ```pintora
@@ -279,4 +279,4 @@ mindmap
 //     ),
 // )
 
-#lorem(2000)
+// #lorem(2000)

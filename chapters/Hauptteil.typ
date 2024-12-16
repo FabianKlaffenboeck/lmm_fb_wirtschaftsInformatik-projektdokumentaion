@@ -64,4 +64,4 @@ der jedes mal aufgerufen wird wen eine Can-Bus Nachricht empfangen wird.
   Bei Electron handelt es sich um eine Laufzeit Umgebung die es mittels der NodeJs V8 Umgebung erlaubt Web Code (also Javascript und HTML) nativ auf Windows Mac oder Linux laufen zu lassen. Zudem erlaubt dieses Framework das auch Node-Native librarys verwendet werden künnen. Normalerweise ist die Verwendung diesen naämlich nur auf Vanilla Node beschränkt. Um sicherzustellen das die Native Librarys auch bei upgrade der Electron version problemlos verwendet werden können, wurde auf die NAPI schnitstelle gesetzt, die durch ihre hohe versionsübergreifende stabilität überzeugt.
 
 
-#lorem(1000)
+// #lorem(1000)

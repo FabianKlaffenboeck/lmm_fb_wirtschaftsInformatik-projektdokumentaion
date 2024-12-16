@@ -10,5 +10,12 @@ Zudem wurde der Vorschritt im Bezug auf die Projekt-Dokumentation erläuter, und
 
 #linebreak()
 Dabei wurden folgende Maßnahmen beschlossen:
+#list([Keine Maßnahmen notwendig])
 
+== Besprechung vom 02.12.2024
+Die projektbesprechung fand am 02.12.2024 nach dem vortragsteil, im Übungsteil stat. Dabei würde der aktuelle Projektvorschritt vorgestellt. 
+Die Präsentation umfasste das Vorzeigen des Electron/React Frontends und der Dokumentation.
+
+#linebreak()
+Dabei wurden folgende Maßnahmen beschlossen:
 #list([Keine Maßnahmen notwendig])
