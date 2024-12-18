@@ -1,5 +1,14 @@
 = Hauptteil
 
+== Geplante Anwendung
+Da es sich bei ApolloLink um ein Werkzeug zur viauslierung von CanBus Daten handelt, muss ein unterstütztes Hardware Interfacce verwendet werden.
+Die aufgabe dieses Interfaces ist es, die Elektronischen Daten von Can auf USB zu wandeln, 
+damit dise auch vom Angeschlossenenen Computer oder Laptop verstanden werden können.  
+In ApolloLink ist es möglich jedem Interface eine odere mehrere so gennate Nodes zugewiesen werden, wobei jede Node eine Sterergerät oder der gleichen darrstellt.
+Jede Node Hat wiederum eine so genanted DBC datei zugewiesen, wodurch es möglich wird die signale die gesendet werden zu verstehen, und spätter zu visualieren.
+Eine DBC datei ist somit nur als "Wörterbuch" anzusehen das es erlaubt zu verstehen welche signale wie gesendet werden.  
+In der Dashboard Ansicht können dann einzelne Signale ausgewählt und grafisch dargestellt werden.
+
 == System Architektur
 Für die Entwicklung, wurde auf neusten Technologien aus dem Web-Bereich zurück gegriffen. Beispielsweise wurde das gerammte User Interface
 mit Rect, getragen von einer Electron Anwendung Entwickelt. #linebreak()
@@ -62,6 +71,3 @@ der jedes mal aufgerufen wird wen eine Can-Bus Nachricht empfangen wird.
 
 === Die fertige APP mittels Electron bauen
   Bei Electron handelt es sich um eine Laufzeit Umgebung die es mittels der NodeJs V8 Umgebung erlaubt Web Code (also Javascript und HTML) nativ auf Windows Mac oder Linux laufen zu lassen. Zudem erlaubt dieses Framework das auch Node-Native librarys verwendet werden künnen. Normalerweise ist die Verwendung diesen naämlich nur auf Vanilla Node beschränkt. Um sicherzustellen das die Native Librarys auch bei upgrade der Electron version problemlos verwendet werden können, wurde auf die NAPI schnitstelle gesetzt, die durch ihre hohe versionsübergreifende stabilität überzeugt.
-
-
-// #lorem(1000)
