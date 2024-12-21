@@ -46,12 +46,8 @@ Ebenfals wurden Wüsche und verbessungsvorschäge der Ziehlgruppe Festgehalten u
 Mittels Wireframe Diagram und Analogen mehoden der Visuellen Prototypen Entwichlung (Stift und Papier), wurde wieder unter einbeziehung der Späteren Anwendere
 Ein modell, samt Userinterface festgelegt.   
 
-
 == Erwartete Auswirkungen und Nutzen
 Da es sich bei deisem Prokelt um die Prototypen entwichlung für ein späteres Produkt handelt,
 wird ein besonderes Augenmerk auf die sessons-learned gelegt, um es der Späteren Entwicklung so leicht wie möglich zu machen ein fertiges 
 hardware-Software Produkt auf den Markt zu bringen. 
 Somit dient das Resultat der Proketarbeit als Grundlage für eine Folgenede Entwichlung einses Vollwertigen Produktes.  
-
-
-// #lorem(2000)

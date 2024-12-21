@@ -71,3 +71,10 @@ der jedes mal aufgerufen wird wen eine Can-Bus Nachricht empfangen wird.
 
 === Die fertige APP mittels Electron bauen
   Bei Electron handelt es sich um eine Laufzeit Umgebung die es mittels der NodeJs V8 Umgebung erlaubt Web Code (also Javascript und HTML) nativ auf Windows Mac oder Linux laufen zu lassen. Zudem erlaubt dieses Framework das auch Node-Native librarys verwendet werden künnen. Normalerweise ist die Verwendung diesen naämlich nur auf Vanilla Node beschränkt. Um sicherzustellen das die Native Librarys auch bei upgrade der Electron version problemlos verwendet werden können, wurde auf die NAPI schnitstelle gesetzt, die durch ihre hohe versionsübergreifende stabilität überzeugt.
+
+== Schreiben der Dokumentation
+  Aus gründen des persönlicehn interressen sit dise gesammte dokunetation mittels dem neuen Setz-System namens typst geschrieben.
+  Tspst erlaubt es ein gesammted Dokument analong zu einer normalen CodeBase zu behandlen, spich dieses Dokument wurde ebenfals in einem Code Editor geschrieben, ganz ohne den einsatz von MS Word oder dergleichen.  
+  Die vorteile leigen darin das man sich nur ein einziges mal um die Formatirung kümmern muss, und der gesammte text in der geählten formatirung in eien PDF verwandelt wird. #linebreak()
+  Als editor wurde VisualStioCode gewählt, da es durch ein Plugin die unterstützung der Sprache erlaubt. 
+  Wen wieder ein abschnit geschriegen wurde, und die Änderungen aufs GitLab gepuscht werden, lauft eine automatische CICD, die die entgülige PDF genereirt.
