@@ -71,6 +71,7 @@
 ) = {
   // Set the document's basic properties.
   set document(author: authors.map(a => a.name), title: title)
+  set par(leading: 1.5em)
   set text(font: "Roboto", lang: "de", size: 12pt)
   show math.equation: set text(weight: 400)
   set math.equation(numbering: "(1)")
