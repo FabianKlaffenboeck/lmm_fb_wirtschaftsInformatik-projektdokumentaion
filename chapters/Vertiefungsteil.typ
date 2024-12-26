@@ -21,3 +21,7 @@
 
 == Performence und Speicherbedarf
 #lorem(500)
+
+== Erstellung der fertigen Anwendung und uslieferung
+#lorem(500)
+

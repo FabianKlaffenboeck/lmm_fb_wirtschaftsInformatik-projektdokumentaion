@@ -53,21 +53,6 @@ Key Activities:
 )
 
 #pagebreak()
-== Projektzieleplan
-#figure(
-  table(
-    columns: (1fr, 1fr),
-    inset: 10pt,
-    align: left,
-      [*Zielart*], [*Projektziele*],
-      [Hauptziele:], [#list([TODO])],
-      [Zusatzziele:], [#list([TODO])],
-      [Nicht-Ziele:], [#list([Wartung des Tools], [Dauerhafte download bereitstellung], [Implementierung neuer Funktionen])],
-    ),
-)
-
-
-#pagebreak()
 == Projektstrukturplan
 #show raw.where(lang: "pintora"): it => pintorita.render(it.text)
 

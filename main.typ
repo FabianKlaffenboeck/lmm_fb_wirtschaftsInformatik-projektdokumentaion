@@ -31,18 +31,18 @@
 ////////////////////////////////////////////////
 
 #include "./chapters/Einleitung.typ"
-
+#pagebreak()
 #include "./chapters/Anlass.typ"
-
+#pagebreak()
 #include "./chapters/Zielsetzung.typ"
-
+#pagebreak()
 #include "./chapters/Prokektmanegement.typ"
-
+#pagebreak()
 #include "./chapters/Hauptteil.typ"
-
+#pagebreak()
 #include "./chapters/Vertiefungsteil.typ"
-
+#pagebreak()
 #include "./chapters/Besprechungen.typ"
-
+#pagebreak()
 #include "./chapters/Zusammenfassung.typ"
 
