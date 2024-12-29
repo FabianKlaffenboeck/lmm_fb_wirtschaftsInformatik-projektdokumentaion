@@ -1,4 +1,8 @@
 = Vertiefungsteil
+Für den vertiefungsteil habe mir das Thema "Entwicklung einer Ntive anwengung mittels React, Electron C++" gewäht,
+da es sich um eines der Haupt Thmemen in dieser arbeit handelt.
+
+
 #lorem(100)
 
 == Electron, Funationalitäten und Arbeitsweise
