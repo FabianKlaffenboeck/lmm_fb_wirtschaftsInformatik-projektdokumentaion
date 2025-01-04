@@ -23,30 +23,33 @@ Zudem kommt nocht Hinzu das Chrome bekannt für seinen Hohen SpeicherBedarf ist,
 Electron ist aber nicht nur das im Browser Angezeigte Frontend, sondern auch die komplette NodeJS Umgebung, die es erlaubt die komplette Backend Logik im gleichen Programm Mitlaufen zu lassen.
 Im besonderenist in diesem Projekt die Kopatität mit Node-Native Wichtig, das seit 2020 Standardmäsig in Electron gegeben ist.
 Mittels der NAPI APi lassen sich ganz normale Node-native Module Einbinden, allerdings müssend dise natürlich auf die Ziehl archtitektue angepasst werden. 
-Genauer wird auf die Entwicklung des Nativ Tiel in einem Späteren Kapitel einegangen. 
+Genauer wird auf die Entwicklung des Nativ Tiel in einem Späteren Kapitel einegangen.
+Die Kommunikation Zwichen dem Frontedn und Backend kann auf zwei weisen Erreicht werden,
+eienrseits können Daten wie Gewohnt mittels REST abgefragt werden, oder mittels Psziellen IPC nachrichten.
+REST hat einige Nachteile, einerseits ist dieses Protokoll nur darauf ausgelegt dass sich die Datan Geholt werden,
+zum anderen hat man auf Grund der Komunikation einen doch erheblichen Flschenhalseffekt.
+Daher ist die Wahl auf einer Datenübertragung mittels IPC gefallen.
+Dabei werden Späzielle so genannte "Inter Process Communication" Paktete vom Backende Geschickt.
+Dise werden Darauf hin Von einem Hook Im javasript aufgefasst und verarbeited.
+Die Verarbeitung gestllted sic darin, dass man für jde IPC Addresse eine Funtion Angiebt,
+die aufgerufen werden soll, sobald eine Nachrich mit diesm Typ dedektirt wurde.
 
-
-
-//#lorem(500)
 
 == Laufwege in der WebApp und Electron
-//#lorem(500)
+#lorem(500)
 
 == Nativer C++ Code
-//#lorem(500)
+#lorem(500)
 
 == Kommunikation mit der Kvasa API
-//#lorem(500)
-
-== Kommunikation zwischen C++ und JavaScript
-//#lorem(500)
+#lorem(500)
 
 == Verarbeitung der Daten innhalb von JavaScript
-//#lorem(500)
+#lorem(500)
 
 == Performence und Speicherbedarf
-//#lorem(500)
+#lorem(500)
 
-== Erstellung der fertigen Anwendung und uslieferung
-//#lorem(500)
+== Erstellung der fertigen Anwendung und Auslieferung
+#lorem(500)
 
