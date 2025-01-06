@@ -34,9 +34,33 @@ Dise werden Darauf hin Von einem Hook Im javasript aufgefasst und verarbeited.
 Die Verarbeitung gestllted sic darin, dass man für jde IPC Addresse eine Funtion Angiebt,
 die aufgerufen werden soll, sobald eine Nachrich mit diesm Typ dedektirt wurde.
 
-
 == Laufwege in der WebApp und Electron
-#lorem(500)
+Grundlegend besteht die Aufgabe darin, ein sogennantes CAN Daten Paket zu empfangen, und dieses dann anzuzeigen.
+Ein solches Paket ist wie folgt aufgebaut:
+#figure(
+  table(
+    columns: (1fr, 1fr, 1fr),
+    inset: 10pt,
+    align: left,
+    table.header([*Field*], [*Length (bits)*], [*Description*]),
+    [Identifier], [11 (Standard) / 29 (Extended)], [The message identifier, which determines the priority of the message. In extended format, it is 29 bits.],
+    [RTR (Remote Transmission Request)], [1], [Indicates if the frame is a data frame or a remote frame (request for data).],
+    [IDE (Identifier Extension Bit)], [1], [In extended frames, this bit is set to 1 to indicate the use of a 29-bit identifier.],
+    [DLC (Data Length Code)], [4], [Specifies the length of the data field (in bytes, 0–8 bytes).],
+    [Data], [0–64 (0–8 bytes)], [The actual data being transmitted (max 8 bytes).],
+    [CRC (Cyclic Redundancy Check)], [15], [Error detection code (used for error checking).],
+    ),
+)
+Das Empfangen dieser Frames wird schon vom  C++ Native Teil Übernommen. Sobald ein solcher Frame Fertig Empfangen wurde,
+wird er in eine JSON Struktur umwandeln, welcha dann an einen JavaScript Handler übergeben wird. Dieser Handler kümmert sich darum,
+dass an den jeweiligen stellen and denen die Daten benötigt werden, diese auch vorliegen. Hauptsächlich handelt es sich um die Sogennaten View Tiles,
+Welche im Dashboar frei konfiguerreibar angeortet werden können.
+Sobald ein Solche Tile Benachrictigt wurde, dass Daten zu verfügung stehen, wird anhand einer so gennanten DBC Datei Enschieden, 
+Welche Datenschipsel wirklich wichtig sind. Wen eine Filterung Konfigueriert ist, Wird über (je nach Einstellung 2-10) die Datenwwerte das Arethmetisch Mittel gebildet, 
+und diese dann angezeigt.
+Eine DBC Datei beschreibt hierbei den Aufbau, und die bedeutung der einzelnen Bits, und verleit ihnen danns schlussentlich die Bneötigte bedeutung.
+Diese Dateien könne in einem Seperaten Tap verwalted werden, und stehen danach überall in der App zu verfügung.
+
 
 == Nativer C++ Code
 #lorem(500)
