@@ -42,6 +42,8 @@
 #pagebreak()
 #include "./chapters/Vertiefungsteil.typ"
 #pagebreak()
+#include "./chapters/Betriebsanleitung.typ"
+#pagebreak()
 #include "./chapters/Besprechungen.typ"
 #pagebreak()
 #include "./chapters/Zusammenfassung.typ"

@@ -61,19 +61,9 @@ und diese dann angezeigt.
 Eine DBC Datei beschreibt hierbei den Aufbau, und die bedeutung der einzelnen Bits, und verleit ihnen danns schlussentlich die Bneötigte bedeutung.
 Diese Dateien könne in einem Seperaten Tap verwalted werden, und stehen danach überall in der App zu verfügung.
 
-
 == Nativer C++ Code
 #lorem(500)
 
 == Kommunikation mit der Kvasa API
-#lorem(500)
-
-== Verarbeitung der Daten innhalb von JavaScript
-#lorem(500)
-
-== Performence und Speicherbedarf
-#lorem(500)
-
-== Erstellung der fertigen Anwendung und Auslieferung
 #lorem(500)
 
