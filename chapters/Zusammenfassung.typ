@@ -1,3 +1,5 @@
+#import "../templates/acronyms.typ": acr
+
 = Zusammenfassung, ergebnisse des Arbeitsprozesses und Reflexion
 Trotz einiger Orgasinatoschischen schwirichkeiten konnten alle Probleme mit mäßigen Zeitlichen ond FInatioenllen aufand bewältigt werden. Trotzen gab es einige Leassons learned und Idden zur veresserung in der Zukunft.-
 

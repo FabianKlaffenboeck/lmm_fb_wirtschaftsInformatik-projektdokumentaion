@@ -112,7 +112,8 @@
       acr-list = acr-list.sorted().rev()
     }
 
-    set block(above: 3em, below: 14pt)
+    linebreak()
+    set block(above: 1.5em, below: 5pt)
   
     // print the acronyms
     for acr in acr-list{

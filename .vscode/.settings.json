@@ -2,7 +2,7 @@
     "files.associations": {
         "*.yaml": "home-assistant"
     },
-    "cSpell.language": "en,de-DE",
+    "cSpell.language": "de-DE",
     "cSpell.enableFiletypes": [
         "typst"
     ]

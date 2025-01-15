@@ -1,7 +1,28 @@
 #import "templates/template.typ": *
 #import "templates/acronyms.typ": *
 
-#let acronyms = ()
+//mit #acr("Abkürzung") bzw #acrpl("Abkürzung")referenziert werden.
+#let acronyms = (
+  //"Abkürzung": ("Vollständige Bezeichnung", "Plural")
+  "CAN": ("Controller Areal Network","x"),
+  "DBC": ("Database Can","x"),
+  "UX": ("user experience","x"),
+  "UI": ("User interface","x"),
+  "PO": ("Product Owner","x"),
+  "CICD": ("Continuous integration and continuous delivery","x"),
+  "LIB": ("Library","x"),
+  "JS": ("JavaScript","x"),
+  "TS": ("TypeScript","x"),
+  "IDE": ("Integrated Development Environment","x"),
+  "NPM": ("Node Paket Manager","x"),
+  "NPX": ("Node Paket Executor","x"),
+  "API": ("Application Programming Interface","x"),
+  "IPC": ("inter process communication","x"),
+  "DLC": ("Data length Code","x"),
+  "ID": ("Identifier","x"),
+  "CLI": ("Commandline Interface","x"),
+  "EXE": ("Executable",""),
+)
 
 #let abstract = [
   In diesem Projekt wird ein performantes CanBus Tool entwickelt, wälches in seiner Funtionalität bereits exestriender lösungen, zb von Vector ähnelt.
@@ -24,12 +45,12 @@
   abstract: abstract,
   acronyms: acronyms,
 )
+
 #init-acronyms(acronyms)
 
 ////////////////////////////////////////////////
 //Hauptteil - Hier wird der Inhalt geschrieben//
 ////////////////////////////////////////////////
-
 #include "./chapters/Einleitung.typ"
 #pagebreak()
 #include "./chapters/Anlass.typ"

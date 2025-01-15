@@ -1,5 +1,6 @@
 #import "@preview/pintorita:0.1.2"
 #import "@preview/acrostiche:0.3.3": *
+#import "../templates/acronyms.typ": acr
 
 = Prokektmanegement
   Um bei desiem Projekt am zahn der zeit zu belieben, wird die weit verbreite und moderne Projekt management methode Scrum gesetzt. Es wurde ien Entwichlungszeitraum von je 3 Wochen fixirt, wobei bei Problemen der Therminfinung mit Stakeholdern teils auch auch einen 4 Wöchugen Zyklus ausgewichen wurde. #linebreak()
@@ -11,7 +12,7 @@
 Zweck: #linebreak()
 In diesem Event wird definirt was in dem Jeweiligen sprinte erreicht werden soll, dazu werden so genannte Tickets Erstellt, welches dann dem jeweiligen Entwichler zugewieden werden kann. #linebreak()
 Teilnehmer: #linebreak() 
-Damit deises Meeting Produktiv abgehalten werden kann sollten allen voran sämtliche Entwichler und POs anwesend sein. 
+Damit deises Meeting Produktiv abgehalten werden kann sollten allen voran sämtliche Entwichler und #acr("PO") anwesend sein.
 #linebreak()
 Key Activities:
 #list(
@@ -30,7 +31,7 @@ Key Activities:
   Zweck: #linebreak()
   In deisem Meeting wird zusammen mit allen steakholdern der akteulle Entwicklungschrit begutachted, und Feedback eingeholt. Zudem wird der Produkt Backlog angepasst, bassierend auf dem Egebnis dieses Meetings. Um dies zu erreichen, stellen die Entwichler den aktuelle stand vor.
   Teilnehmer: #linebreak() 
-  Anwesend sein sollte das gesammte Scrum team, und alle key Stakeholder inkusive des POs.
+  Anwesend sein sollte das gesammte Scrum team, und alle key Stakeholder inkusive des #acr("PO").
 
 #pagebreak()
 
@@ -45,7 +46,7 @@ Key Activities:
     align: left,
     [Projektstartereignis: #list([Abklärung der Funtionne mit Ziehlgruppe])], [Projektstarttermin: #list([16.10.2024])],
     [Inhaltliches Projektendereignis: #list([Testveröffentlichung auf GitHub])], [Projektendtermine: #list([25.01.2025])],
-    [Projektziele: #list([Erstellung einer CAN-monitoring Anwendung])], [Nicht-Projektziele: #list([Test], [Bewerbung], [Design])],
+    [Projektziele: #list([Erstellung einer #acr("CAN")-monitoring Anwendung])], [Nicht-Projektziele: #list([Test], [Bewerbung], [Design])],
     [Hauptaufgaben (Projektphasen): #list([Werden mittels Scrum im laufe der Entwichlung bestimmt.])], [],
     [ProjektauftraggeberIn: #list([eWolveLabs])], [ProjektleiterIn: #list([Fabian Klaffenböck])],
     [Projektteam: #list([Fabian Klaffenböck])], []
@@ -61,7 +62,7 @@ mindmap
 @param layoutDirection TB
 + Apollolink
 ++ Hardware Interface
-++ UI/UX Design
+++ "UI/UX Design
 ++ Branding
 ++ Deployment
 ```
@@ -127,7 +128,7 @@ mindmap
   [*AP-Inhalt* (Was soll getan werden?):
     #list([Plots solle in Dashboard verfügbar sein])],
   [*AP-Nicht-Inhalte* (Was soll nicht getan werden?):
-    #list([test mittels Can schnitstelle -> Nur mock])],
+    #list([test mittels #acr("CAN") schnitstelle -> Nur mock])],
   [*AP-Ergebnisse* (Was liegt nach Beendigung des Arbeitspaketes vor?):
     #list([Mockdaten werden ansehbar])]
 )
@@ -142,7 +143,7 @@ mindmap
   [*AP-Inhalt* (Was soll getan werden?):
     #list([daten einträge sollen löschbar sein])],
   [*AP-Nicht-Inhalte* (Was soll nicht getan werden?):
-    #list([Disableing wen Can verwendet wird])],
+    #list([Disableing wen #acr("CAN") verwendet wird])],
   [*AP-Ergebnisse* (Was liegt nach Beendigung des Arbeitspaketes vor?):
     #list([Die user-experidende wird verbessert, da daten gelöscht werden können die ihrtümlich erstellt wurden.])]
 )
@@ -157,11 +158,11 @@ mindmap
     align: horizon,
     rotate(-90deg, reflow: true)[*PSP-Code, AP-Bezeichnung*]),
   [*AP-Inhalt* (Was soll getan werden?):
-    #list([DBC Parser einbinden])],
+    #list([#acr("DBC") Parser einbinden])],
   [*AP-Nicht-Inhalte* (Was soll nicht getan werden?):
-    #list([Enbindung und Visualisirung einer DBC datei ind das gesammt System])],
+    #list([Enbindung und Visualisirung einer #acr("DBC") datei ind das gesammt System])],
   [*AP-Ergebnisse* (Was liegt nach Beendigung des Arbeitspaketes vor?):
-    #list([DBC Dateien können hochgeldaen werden, und sind übersichtlich zu werwalten, im hintergrund werden JS modelle erstellt, die im Code verwendet werden können.])]
+    #list([#acr("DBC") Dateien können hochgeldaen werden, und sind übersichtlich zu werwalten, im hintergrund werden JS modelle erstellt, die im Code verwendet werden können.])]
 )
 
 #table(
@@ -204,7 +205,7 @@ mindmap
   [*AP-Inhalt* (Was soll getan werden?):
     #list([hinzufügen von Shadcn/ui])],
   [*AP-Nicht-Inhalte* (Was soll nicht getan werden?):
-    #list([Einbindung in die UI])],
+    #list([Einbindung in die #acr("UI")])],
   [*AP-Ergebnisse* (Was liegt nach Beendigung des Arbeitspaketes vor?):
     #list([Shadcn soll zur entwichklung zur verfügung stehen.])]
 )
@@ -217,7 +218,7 @@ mindmap
     align: horizon,
     rotate(-90deg, reflow: true)[*PSP-Code, AP-Bezeichnung*]),
   [*AP-Inhalt* (Was soll getan werden?):
-    #list([erstellung einer CICD pipeline])],
+    #list([erstellung einer #acr("CICD") pipeline])],
   [*AP-Nicht-Inhalte* (Was soll nicht getan werden?):
     #list([aufsetzten von server Infrastruktur])],
   [*AP-Ergebnisse* (Was liegt nach Beendigung des Arbeitspaketes vor?):
@@ -235,10 +236,10 @@ mindmap
     [1],[Setup von Electron/Vite],[13.10.2024],[],[13.10.2024],
     [2],[Implement ShadCn],[13.10.2024],[],[13.10.2024],
     [3],[Dynamic-grid ist verfügbar],[14.10.2024],[],[13.10.2024],
-    [4],[Node-native Lib für Kvaser],[16.11.2024],[],[16.11.2024],
-    [5],[Einlesen erster Can Nachrichten],[16.11.2024],[],[16.11.2024],
+    [4],[Node-native #acr("LIB") für Kvaser],[16.11.2024],[],[16.11.2024],
+    [5],[Einlesen erster #acr("CAN") Nachrichten],[16.11.2024],[],[16.11.2024],
     [6],[Settins Page fertigstellung],[23.11.2024],[],[24.11.2024],
-    [7],[DBC parsing],[29.11.2024],[],[30.11.2024],
+    [7],[#acr("DBC") parsing],[29.11.2024],[],[30.11.2024],
     [8],[Darstellung mittels Grid],[30.11.2024],[],[30.11.2024],
     ),
 )

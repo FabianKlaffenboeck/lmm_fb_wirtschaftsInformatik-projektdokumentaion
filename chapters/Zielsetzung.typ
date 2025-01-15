@@ -1,3 +1,5 @@
+#import "../templates/acronyms.typ": acr
+
 = Zielsetzung
 
 == Projektbeschreibung und -kontext
@@ -12,13 +14,13 @@ Achte darauf, dass das Ziel konkret und messbar ist.
 Die Hauptziehle dieser Proketarbeit sind wie folgt:
 
 === Erwerbung von Node-Native Kenntnissen
-Da moderne Web Systeme es erlauben mit vergleichweise wenig aufwand, einer optisch sehr anprechende UI/UX zu realieren,
+Da moderne Web Systeme es erlauben mit vergleichweise wenig aufwand, einer optisch sehr anprechende UI/#acr("UX") zu realieren,
 wird dise in zukunft immer wichtiger.
 Da moderen Web Technologie darauf basiert das das Inetrface in einer Abgekapselten Sandbox (der Sogenannten V8) agiert,
 ist es von hausaus nicht vorgesehen auf wieferlegend Hardware zuzugreifen. Um dies allerding zu ermöglichen, muss mittels Node-Native 
 die Brücke geschlossen werden.  
 Node-Native erlauft es mittels der Sogenannten NAPI, C++ Code in die V8 einzubinden,
-der dann wie jedes andere Node Modul in JavaSricpt ausgeführt werden kann.
+der dann wie jedes andere Node Modul in #acr("JS") ausgeführt werden kann.
 
 === Entwicklung mit React/Electron
 Webentwicklung ist heutzutage nicht wer wegzudenken, und werlaubt eine denkbar einfache erstellung von Userinterfaces.
@@ -26,7 +28,7 @@ Da es allerding nicht immer sinnvoll, geschweige denn zumitbar ist immer eine We
 muss die App irgendwie "Instalierbar" werden. Dies wird mittels Electron ermöglicht, da die "Website" in deisem fall mittels V8 in eienr abgekapselten App
 angezeigt wird. Dies ermöglich alle Techniken der Web-welt, mit hardware treibern zu intigrieren. 
 
-=== Prototyp für Vector canalyzer alternative
+=== Prototyp für Vector Canalyzer alternative
 das Programme Canalyzer der Firma Vector ist aktuell neben INCA von ETAS das beliebstse tool um mit Canbus zu arbeiten. 
 Allering verlang Vector sehr hohe lizenzgebüren mit unteren 4 stelligen bereich pro Lizent, 
 und damit ist diese Tool Landschaft kaum zugänglich für Hobbyentwickler oder Kleinstfirmen. Genau für dise Kunden ist dises Projekt gedacht.
