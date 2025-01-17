@@ -20,11 +20,11 @@ kann dies nur mittels einem Electron Wrapper ermöglocht werden.
 Electron agiert ans dieser Stelle Ählin eines Webbrowsers, in dem das Userinterface ählich einer normalen Webseite Angezeigt wird.
 Dies wird ermöglicht indem Electron von haus aus mit seiner einen Copie von Chrome kommt.
 Dies hat den vorteil, dass das Fertigee Programm nicht auf andere vor Intsatierte Programme angewiesen ist.
-Leider wird aber dann in jeder mittels Electron Entwickelten Anwendung ein Komplettes paket von Chrome ausgeliefert, was die Fertige EXE doch sehr groß macht. 
+Leider wird aber dann in jeder mittels Electron Entwickelten Anwendung ein Komplettes paket von Chrome ausgeliefert, was die Fertige EXE doch sehr groß macht.
 Zudem kommt nocht Hinzu das Chrome bekannt für seinen Hohen SpeicherBedarf ist, und somit auch nicht perfekt auf Schwächren Systemen Lauft.
 Electron ist aber nicht nur das im Browser Angezeigte Frontend, sondern auch die komplette NodeJS Umgebung, die es erlaubt die komplette Backend Logik im gleichen Programm Mitlaufen zu lassen.
 Im besonderenist in diesem Projekt die Kopatität mit Node-Native Wichtig, das seit 2020 Standardmäsig in Electron gegeben ist.
-Mittels der NAPI APi lassen sich ganz normale Node-native Module Einbinden, allerdings müssend dise natürlich auf die Ziehl archtitektue angepasst werden. 
+Mittels der NAPI APi lassen sich ganz normale Node-native Module Einbinden, allerdings müssend dise natürlich auf die Ziehl archtitektue angepasst werden.
 Genauer wird auf die Entwicklung des Nativ Tiel in einem Späteren Kapitel einegangen.
 Die Kommunikation Zwichen dem Frontedn und Backend kann auf zwei weisen Erreicht werden,
 eienrseits können Daten wie Gewohnt mittels REST abgefragt werden, oder mittels Psziellen #acr("IPC") nachrichten.
@@ -45,20 +45,29 @@ Ein solches Paket ist wie folgt aufgebaut:
     inset: 10pt,
     align: left,
     table.header([*Field*], [*Length (bits)*], [*Description*]),
-    [Identifier], [11 (Standard) / 29 (Extended)], [The message identifier, which determines the priority of the message. In extended format, it is 29 bits.],
-    [RTR (Remote Transmission Request)], [1], [Indicates if the frame is a data frame or a remote frame (request for data).],
-    [IDE (Identifier Extension Bit)], [1], [In extended frames, this bit is set to 1 to indicate the use of a 29-bit identifier.],
+    [Identifier],
+    [11 (Standard) / 29 (Extended)],
+    [The message identifier, which determines the priority of the message. In extended format, it is 29 bits.],
+
+    [RTR (Remote Transmission Request)],
+    [1],
+    [Indicates if the frame is a data frame or a remote frame (request for data).],
+
+    [IDE (Identifier Extension Bit)],
+    [1],
+    [In extended frames, this bit is set to 1 to indicate the use of a 29-bit identifier.],
+
     [#acr("DBC") (Data Length Code)], [4], [Specifies the length of the data field (in bytes, 0–8 bytes).],
     [Data], [0–64 (0–8 bytes)], [The actual data being transmitted (max 8 bytes).],
     [CRC (Cyclic Redundancy Check)], [15], [Error detection code (used for error checking).],
-    ),
+  ),
 )
-Das Empfangen dieser Frames wird schon vom  C++ Native Teil Übernommen. Sobald ein solcher Frame Fertig Empfangen wurde,
+Das Empfangen dieser Frames wird schon vom C++ Native Teil Übernommen. Sobald ein solcher Frame Fertig Empfangen wurde,
 wird er in eine JSON Struktur umwandeln, welcha dann an einen #acr("JS") Handler übergeben wird. Dieser Handler kümmert sich darum,
 dass an den jeweiligen stellen and denen die Daten benötigt werden, diese auch vorliegen. Hauptsächlich handelt es sich um die Sogennaten View Tiles,
 Welche im Dashboar frei konfiguerreibar angeortet werden können.
 Sobald ein Solche Tile Benachrictigt wurde, dass Daten zu verfügung stehen, wird anhand einer so gennanten #acr("DBC") Datei Enschieden,
-Welche Datenschipsel wirklich wichtig sind. Wen eine Filterung Konfigueriert ist, Wird über (je nach Einstellung 2-10) die Datenwwerte das Arethmetisch Mittel gebildet, 
+Welche Datenschipsel wirklich wichtig sind. Wen eine Filterung Konfigueriert ist, Wird über (je nach Einstellung 2-10) die Datenwwerte das Arethmetisch Mittel gebildet,
 und diese dann angezeigt.
 Eine #acr("DBC") Datei beschreibt hierbei den Aufbau, und die bedeutung der einzelnen Bits, und verleit ihnen danns schlussentlich die Bneötigte bedeutung.
 Diese Dateien könne in einem Seperaten Tap verwalted werden, und stehen danach überall in der App zu verfügung.
@@ -67,7 +76,7 @@ Diese Dateien könne in einem Seperaten Tap verwalted werden, und stehen danach 
 Der C++ Teil des Systemes ist quasi das Hertszück des Systemes.
 Er kümmert sich um das Empfangen der Nachrichten via der vor Kvaser bereit geestllten #acr("API").
 Bei Kvaser handelt es sich neven Vektor um einen der größten Hersteller von #acr("CAN")-Bus zu USB Adaptern,
-und daher sidn diese Interfaces auch stark in der Industri vertreten. 
+und daher sidn diese Interfaces auch stark in der Industri vertreten.
 Es gibt zudem auch einige Alternativen die vollständig OpenSource sind,
 allerdings sind die dann offtmals nicht so gut Supported, was in einem Business Context nicht tragbar ist.
 Kvaser stellt für jeesde ihrer Prdoke eine sehr gut Dokumentierte #acr("API") zur verfügung, mittesl der es Möglich ist #acr("CAN")-Bus Nachrichten zu senden und Empfangen.
@@ -85,5 +94,5 @@ Der tadsächlische sende Prozess lauft dann Asycron und voll automatisch ab. Sob
 #linebreak()
 Im C++ Kerer werden aber nur die Funtionalitäten der Kvaser #acr("API") soweit Absatakert, das es später auch möglich sein wird andere Interfaces zu unterstützen.
 Die tadsächlische einteilungen in Logische objekte wir mittels #acr("TS") realisert, da dadurch einene Integration in das Große System stark vereinfacht wird.
-Alles zusammen wird in einem Node Pakt ausgeliefert, welche schon für die gängisten Betriebessteme und Architekurten Vorkopilerit wurde, was eine einbundungs sehr Angemen gestalted. 
+Alles zusammen wird in einem Node Pakt ausgeliefert, welche schon für die gängisten Betriebessteme und Architekurten Vorkopilerit wurde, was eine einbundungs sehr Angemen gestalted.
 Für die Electron Anwändun sieht das gesmmte Paket aus wie jedes andere Node Paket.

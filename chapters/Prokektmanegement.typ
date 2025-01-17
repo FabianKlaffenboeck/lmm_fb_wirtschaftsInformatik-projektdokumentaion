@@ -3,15 +3,15 @@
 #import "../templates/acronyms.typ": acr
 
 = Prokektmanegement
-  Um bei desiem Projekt am zahn der zeit zu belieben, wird die weit verbreite und moderne Projekt management methode Scrum gesetzt. Es wurde ien Entwichlungszeitraum von je 3 Wochen fixirt, wobei bei Problemen der Therminfinung mit Stakeholdern teils auch auch einen 4 Wöchugen Zyklus ausgewichen wurde. #linebreak()
-  Bei der umsetztung von Scrum wurde sich aufgrund des sehr kleinen Entwicklerteams nur auf Planing und Review beschränkt. #linebreak()
+Um bei desiem Projekt am zahn der zeit zu belieben, wird die weit verbreite und moderne Projekt management methode Scrum gesetzt. Es wurde ien Entwichlungszeitraum von je 3 Wochen fixirt, wobei bei Problemen der Therminfinung mit Stakeholdern teils auch auch einen 4 Wöchugen Zyklus ausgewichen wurde. #linebreak()
+Bei der umsetztung von Scrum wurde sich aufgrund des sehr kleinen Entwicklerteams nur auf Planing und Review beschränkt. #linebreak()
 
 == Scrum Events
 
 === Planing
 Zweck: #linebreak()
 In diesem Event wird definirt was in dem Jeweiligen sprinte erreicht werden soll, dazu werden so genannte Tickets Erstellt, welches dann dem jeweiligen Entwichler zugewieden werden kann. #linebreak()
-Teilnehmer: #linebreak() 
+Teilnehmer: #linebreak()
 Damit deises Meeting Produktiv abgehalten werden kann sollten allen voran sämtliche Entwichler und #acr("PO") anwesend sein.
 #linebreak()
 Key Activities:
@@ -24,14 +24,14 @@ Key Activities:
   ],
   [
     Planen der Arbeit: Die Entwickler planen, wie sie die ausgewählten Product Backlog-Elemente in Wertzuwächse umwandeln, indem sie sie in kleinere Aufgaben zerlegen1
-  ]
+  ],
 )
 
 === Review
-  Zweck: #linebreak()
-  In deisem Meeting wird zusammen mit allen steakholdern der akteulle Entwicklungschrit begutachted, und Feedback eingeholt. Zudem wird der Produkt Backlog angepasst, bassierend auf dem Egebnis dieses Meetings. Um dies zu erreichen, stellen die Entwichler den aktuelle stand vor.
-  Teilnehmer: #linebreak() 
-  Anwesend sein sollte das gesammte Scrum team, und alle key Stakeholder inkusive des #acr("PO").
+Zweck: #linebreak()
+In deisem Meeting wird zusammen mit allen steakholdern der akteulle Entwicklungschrit begutachted, und Feedback eingeholt. Zudem wird der Produkt Backlog angepasst, bassierend auf dem Egebnis dieses Meetings. Um dies zu erreichen, stellen die Entwichler den aktuelle stand vor.
+Teilnehmer: #linebreak()
+Anwesend sein sollte das gesammte Scrum team, und alle key Stakeholder inkusive des #acr("PO").
 
 #pagebreak()
 
@@ -45,12 +45,16 @@ Key Activities:
     inset: 10pt,
     align: left,
     [Projektstartereignis: #list([Abklärung der Funtionne mit Ziehlgruppe])], [Projektstarttermin: #list([16.10.2024])],
-    [Inhaltliches Projektendereignis: #list([Testveröffentlichung auf GitHub])], [Projektendtermine: #list([25.01.2025])],
-    [Projektziele: #list([Erstellung einer #acr("CAN")-monitoring Anwendung])], [Nicht-Projektziele: #list([Test], [Bewerbung], [Design])],
+    [Inhaltliches Projektendereignis: #list([Testveröffentlichung auf GitHub])],
+    [Projektendtermine: #list([25.01.2025])],
+
+    [Projektziele: #list([Erstellung einer #acr("CAN")-monitoring Anwendung])],
+    [Nicht-Projektziele: #list([Test], [Bewerbung], [Design])],
+
     [Hauptaufgaben (Projektphasen): #list([Werden mittels Scrum im laufe der Entwichlung bestimmt.])], [],
     [ProjektauftraggeberIn: #list([eWolveLabs])], [ProjektleiterIn: #list([Fabian Klaffenböck])],
-    [Projektteam: #list([Fabian Klaffenböck])], []
-    ),
+    [Projektteam: #list([Fabian Klaffenböck])], [],
+  ),
 )
 
 #pagebreak()
@@ -104,12 +108,13 @@ mindmap
 == Arbeitspaket-Spezifikation
 
 #table(
-  columns: (0.05fr,1fr),
+  columns: (0.05fr, 1fr),
   inset: 10pt,
   table.cell(
     rowspan: 3,
     align: horizon,
-    rotate(-90deg, reflow: true)[*PSP-Code, AP-Bezeichnung*]),
+    rotate(-90deg, reflow: true)[*PSP-Code, AP-Bezeichnung*],
+  ),
   [*AP-Inhalt* (Was soll getan werden?):
     #list([Basich layout erstellen])],
   [*AP-Nicht-Inhalte* (Was soll nicht getan werden?):
@@ -119,12 +124,13 @@ mindmap
 )
 
 #table(
-  columns: (0.05fr,1fr),
+  columns: (0.05fr, 1fr),
   inset: 10pt,
   table.cell(
     rowspan: 3,
     align: horizon,
-    rotate(-90deg, reflow: true)[*PSP-Code, AP-Bezeichnung*]),
+    rotate(-90deg, reflow: true)[*PSP-Code, AP-Bezeichnung*],
+  ),
   [*AP-Inhalt* (Was soll getan werden?):
     #list([Plots solle in Dashboard verfügbar sein])],
   [*AP-Nicht-Inhalte* (Was soll nicht getan werden?):
@@ -134,12 +140,13 @@ mindmap
 )
 
 #table(
-  columns: (0.05fr,1fr),
+  columns: (0.05fr, 1fr),
   inset: 10pt,
   table.cell(
     rowspan: 3,
     align: horizon,
-    rotate(-90deg, reflow: true)[*PSP-Code, AP-Bezeichnung*]),
+    rotate(-90deg, reflow: true)[*PSP-Code, AP-Bezeichnung*],
+  ),
   [*AP-Inhalt* (Was soll getan werden?):
     #list([daten einträge sollen löschbar sein])],
   [*AP-Nicht-Inhalte* (Was soll nicht getan werden?):
@@ -151,12 +158,13 @@ mindmap
 #pagebreak()
 
 #table(
-  columns: (0.05fr,1fr),
+  columns: (0.05fr, 1fr),
   inset: 10pt,
   table.cell(
     rowspan: 3,
     align: horizon,
-    rotate(-90deg, reflow: true)[*PSP-Code, AP-Bezeichnung*]),
+    rotate(-90deg, reflow: true)[*PSP-Code, AP-Bezeichnung*],
+  ),
   [*AP-Inhalt* (Was soll getan werden?):
     #list([#acr("DBC") Parser einbinden])],
   [*AP-Nicht-Inhalte* (Was soll nicht getan werden?):
@@ -166,12 +174,13 @@ mindmap
 )
 
 #table(
-  columns: (0.05fr,1fr),
+  columns: (0.05fr, 1fr),
   inset: 10pt,
   table.cell(
     rowspan: 3,
     align: horizon,
-    rotate(-90deg, reflow: true)[*PSP-Code, AP-Bezeichnung*]),
+    rotate(-90deg, reflow: true)[*PSP-Code, AP-Bezeichnung*],
+  ),
   [*AP-Inhalt* (Was soll getan werden?):
     #list([Erstellen neuer Cards soll im Lineken menü möglich sein.])],
   [*AP-Nicht-Inhalte* (Was soll nicht getan werden?):
@@ -181,12 +190,13 @@ mindmap
 )
 
 #table(
-  columns: (0.05fr,1fr),
+  columns: (0.05fr, 1fr),
   inset: 10pt,
   table.cell(
     rowspan: 2,
     align: horizon,
-    rotate(-90deg, reflow: true)[*PSP-Code, AP-Bezeichnung*]),
+    rotate(-90deg, reflow: true)[*PSP-Code, AP-Bezeichnung*],
+  ),
   [*AP-Inhalt* (Was soll getan werden?):
     #list([Settings seite erstellen])],
   [*AP-Ergebnisse* (Was liegt nach Beendigung des Arbeitspaketes vor?):
@@ -196,12 +206,13 @@ mindmap
 #pagebreak()
 
 #table(
-  columns: (0.05fr,1fr),
+  columns: (0.05fr, 1fr),
   inset: 10pt,
   table.cell(
     rowspan: 3,
     align: horizon,
-    rotate(-90deg, reflow: true)[*PSP-Code, AP-Bezeichnung*]),
+    rotate(-90deg, reflow: true)[*PSP-Code, AP-Bezeichnung*],
+  ),
   [*AP-Inhalt* (Was soll getan werden?):
     #list([hinzufügen von Shadcn/ui])],
   [*AP-Nicht-Inhalte* (Was soll nicht getan werden?):
@@ -211,12 +222,13 @@ mindmap
 )
 
 #table(
-  columns: (0.05fr,1fr),
+  columns: (0.05fr, 1fr),
   inset: 10pt,
   table.cell(
     rowspan: 3,
     align: horizon,
-    rotate(-90deg, reflow: true)[*PSP-Code, AP-Bezeichnung*]),
+    rotate(-90deg, reflow: true)[*PSP-Code, AP-Bezeichnung*],
+  ),
   [*AP-Inhalt* (Was soll getan werden?):
     #list([erstellung einer #acr("CICD") pipeline])],
   [*AP-Nicht-Inhalte* (Was soll nicht getan werden?):
@@ -233,15 +245,15 @@ mindmap
     inset: 10pt,
     align: left,
     table.header([PSP-Code], [Meilenstein], [Basis-termine], [Aktuelle Plantermine], [Ist Termine]),
-    [1],[Setup von Electron/Vite],[13.10.2024],[],[13.10.2024],
-    [2],[Implement ShadCn],[13.10.2024],[],[13.10.2024],
-    [3],[Dynamic-grid ist verfügbar],[14.10.2024],[],[13.10.2024],
-    [4],[Node-native #acr("LIB") für Kvaser],[16.11.2024],[],[16.11.2024],
-    [5],[Einlesen erster #acr("CAN") Nachrichten],[16.11.2024],[],[16.11.2024],
-    [6],[Settins Page fertigstellung],[23.11.2024],[],[24.11.2024],
-    [7],[#acr("DBC") parsing],[29.11.2024],[],[30.11.2024],
-    [8],[Darstellung mittels Grid],[30.11.2024],[],[30.11.2024],
-    ),
+    [1], [Setup von Electron/Vite], [13.10.2024], [], [13.10.2024],
+    [2], [Implement ShadCn], [13.10.2024], [], [13.10.2024],
+    [3], [Dynamic-grid ist verfügbar], [14.10.2024], [], [13.10.2024],
+    [4], [Node-native #acr("LIB") für Kvaser], [16.11.2024], [], [16.11.2024],
+    [5], [Einlesen erster #acr("CAN") Nachrichten], [16.11.2024], [], [16.11.2024],
+    [6], [Settins Page fertigstellung], [23.11.2024], [], [24.11.2024],
+    [7], [#acr("DBC") parsing], [29.11.2024], [], [30.11.2024],
+    [8], [Darstellung mittels Grid], [30.11.2024], [], [30.11.2024],
+  ),
 )
 
 // #pagebreak()

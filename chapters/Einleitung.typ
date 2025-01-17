@@ -25,18 +25,23 @@ Das im Rahmen dieses Projekts entwickelte #acr("CAN")-Bus-Monitoring-Tool basier
 Die Hauptziele des Projekts sind wie folgt:
 
 #list(
-[
-  Entwicklung eines benutzerfreundlichen Tools: Das Monitoring-Tool soll eine intuitive Benutzeroberfläche bieten, die es Technikern einfach
-  ermöglicht, #acr("CAN") Daten zu erfassen und zu analysieren, ohne vorher eine Langwierige und Kostenintensive Schulungen durchlaufen zu haben.
-],[
-  Echtzeit-Überwachung und Analyse: Das Tool muss in der Lage sein einen #acr("CAN")-Bus über 10 Minuten aufzuzeichnen und Grafisch darzustellen.
-],[
-  Datenvisualisierung: Die empfangenen Frames müssen Grafisch ansprechend Dargestellt werden, und es muss übersichtlich sein welche Daten wo genau angezeigt werden.
-],[
-  #acr("CAN")-Bus Architektur: Es muss möglich sein den Bus in logische Einheiten (Channels und Nodes) zu unterteilen, und mit Hilfe einer so genannten #acr("DBC") Datei aufzuschlüsseln.
-],[
-  Erweiterbarkeit und Flexibilität: Das Tool soll modular aufgebaut sein, um zukünftige Erweiterungen und Anpassungen an neue Technologien und Standards zu ermöglichen.
-])
+  [
+    Entwicklung eines benutzerfreundlichen Tools: Das Monitoring-Tool soll eine intuitive Benutzeroberfläche bieten, die es Technikern einfach
+    ermöglicht, #acr("CAN") Daten zu erfassen und zu analysieren, ohne vorher eine Langwierige und Kostenintensive Schulungen durchlaufen zu haben.
+  ],
+  [
+    Echtzeit-Überwachung und Analyse: Das Tool muss in der Lage sein einen #acr("CAN")-Bus über 10 Minuten aufzuzeichnen und Grafisch darzustellen.
+  ],
+  [
+    Datenvisualisierung: Die empfangenen Frames müssen Grafisch ansprechend Dargestellt werden, und es muss übersichtlich sein welche Daten wo genau angezeigt werden.
+  ],
+  [
+    #acr("CAN")-Bus Architektur: Es muss möglich sein den Bus in logische Einheiten (Channels und Nodes) zu unterteilen, und mit Hilfe einer so genannten #acr("DBC") Datei aufzuschlüsseln.
+  ],
+  [
+    Erweiterbarkeit und Flexibilität: Das Tool soll modular aufgebaut sein, um zukünftige Erweiterungen und Anpassungen an neue Technologien und Standards zu ermöglichen.
+  ],
+)
 
 == Technologischer Rahmen
 
@@ -46,7 +51,7 @@ Als Komponenten #acr("LIB") kommt ShadCn aufgrund seines modernen Aussehens und 
 Abgerundet wird der Stack von Vite als build framework, und Electron als Laufzeit Umgebung.
 Beide Systeme sind vielseitig im einsatz und aufgrund ihrer Verbreitung top getestet.
 Da die genannten Technologien aus den Web-bereich kommen, und diese nicht auf die Hardware Ebene zugreifen können,
-musste noch eine Node-Native Erweiterung für die V8 Engine von Electron bereit gestellt werden. 
+musste noch eine Node-Native Erweiterung für die V8 Engine von Electron bereit gestellt werden.
 Diese Erweiterung greift über NAPI auf die V8 Engine zu, und ist in C++ geschrieben.
 Die Tatsache dass das Plugin in C++ geschrieben ist, ermöglicht es seinerseits auf die,
 von Kvaser bereit gestellte, #acr("API") der #acr("CAN")-Bus zu USB-Wandler zuzugreifen.
@@ -56,15 +61,19 @@ von Kvaser bereit gestellte, #acr("API") der #acr("CAN")-Bus zu USB-Wandler zuzu
 Die Methodik für die Entwicklung des Monitoring-Tools umfasst mehrere Phasen:
 
 #list(
-[
-  Anforderungsanalyse: In dieser Phase werden die spezifischen Anforderungen an das Tool definiert. Dies beinhaltet die Identifizierung der Benutzerbedürfnisse, der gewünschten Funktionen und der technischen Rahmenbedingungen.
-],[
-  Entwurf und Planung: Auf Basis der Anforderungsanalyse wird ein detaillierter Entwurf des Tools erstellt, der sowohl die Softwarearchitektur als auch die Benutzeroberfläche umfasst.
-],[
-  Implementierung: In dieser Phase erfolgt die eigentliche Programmierung des Tools. Hierbei werden die verschiedenen Module entwickelt und integriert, einschließlich der Datenerfassungs- und Analysefunktionen.
-],[
-  Testen und Validierung: Nach der Implementierung wird das Tool gründlich getestet, um sicherzustellen, dass alle Funktionen korrekt arbeiten und die Benutzerfreundlichkeit gegeben ist.
-],[
-  Dokumentation: Eine umfassende Dokumentation wird erstellt, um die Benutzer bei der Nutzung des Tools zu unterstützen und zukünftige Entwickler bei der Wartung und Erweiterung des Systems zu informieren.
-]
+  [
+    Anforderungsanalyse: In dieser Phase werden die spezifischen Anforderungen an das Tool definiert. Dies beinhaltet die Identifizierung der Benutzerbedürfnisse, der gewünschten Funktionen und der technischen Rahmenbedingungen.
+  ],
+  [
+    Entwurf und Planung: Auf Basis der Anforderungsanalyse wird ein detaillierter Entwurf des Tools erstellt, der sowohl die Softwarearchitektur als auch die Benutzeroberfläche umfasst.
+  ],
+  [
+    Implementierung: In dieser Phase erfolgt die eigentliche Programmierung des Tools. Hierbei werden die verschiedenen Module entwickelt und integriert, einschließlich der Datenerfassungs- und Analysefunktionen.
+  ],
+  [
+    Testen und Validierung: Nach der Implementierung wird das Tool gründlich getestet, um sicherzustellen, dass alle Funktionen korrekt arbeiten und die Benutzerfreundlichkeit gegeben ist.
+  ],
+  [
+    Dokumentation: Eine umfassende Dokumentation wird erstellt, um die Benutzer bei der Nutzung des Tools zu unterstützen und zukünftige Entwickler bei der Wartung und Erweiterung des Systems zu informieren.
+  ],
 )

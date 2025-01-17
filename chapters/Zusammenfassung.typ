@@ -9,7 +9,7 @@ Um es dem Endbenutzer soe einfach wie möglich zu machen das Tool zu verwenden, 
 == Leassons learned
 Wen es um die Komuntiation mit Potentielle kundnen oder auch Endanwendern get, hat sich im laufend es Projektes gerausgestellt,
 das es exprem wichtig ist, Idden grafisch darzustellen,
-und sie anhande von Diagrammen und Abaufdiagrammer Erklären zu können. 
+und sie anhande von Diagrammen und Abaufdiagrammer Erklären zu können.
 
 == Zukunft des Prokeltes
 Auf basis von aktueller Nachfrage, siet es aktuell so aus, das ApolloLink im makrt einen positiven anklang findne wird, un sich somit auch gegenüber anaderer Hersteller Behaupten kann. Natürlich ist es ohne konlrete Zahlern schwer zu sagen wie da sProdukt wirklich ankommen wird, aber das Team ist guter dinge.
