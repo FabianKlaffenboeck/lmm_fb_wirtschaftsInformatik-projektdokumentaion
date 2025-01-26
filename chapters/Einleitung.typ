@@ -11,6 +11,7 @@ Darauf aufbauend gibt es, Protokolle wie #acr("CAN") XCP, #acr("CAN")-Open und v
 
 Das #acr("CAN")-Bussystem ermöglicht die Interaktion mehrerer ECUs über ein gemeinsames Kommunikationsmedium. Diese Fähigkeit zum Datenaustausch ist für moderne Fahrzeuge von entscheidender Bedeutung, da sie zahlreiche elektronische Funktionen koordinieren, darunter Motorsteuerung, Bremsen, Fahrerassistenzsysteme und Infotainment. Die Integration dieser Systeme bringt jedoch auch Herausforderungen mit sich, insbesondere in Bezug auf Fehlerbehebung, Leistungsüberwachung und Datenanalyse. Hier kommt das CAN-Bus-Überwachungstool ins Spiel, das diese Herausforderungen bewältigen und die Effizienz und Zuverlässigkeit von CAN-Netzwerken verbessern soll.
 
+#pagebreak()
 == Hintergrund
 
 Der Bedarf an Kostengünstigen #acr("CAN")-Bus Monitoring Tools ist in den letzten Jahren stark gestiegen.
@@ -19,7 +20,7 @@ Der Bedarf an einem effektiven Überwachungstool wird durch die zunehmende Kompl
 
 Das im Rahmen dieses Projekts entwickelte #acr("CAN")-Bus-Monitoring-Tool basiert auf bestehenden Lösungen wie dem Canalyser von Vector, der als Benchmark für Leistungsfähigkeit und Benutzerfreundlichkeit in der CAN-Diagnosetechnologie dient. Ziel dieses Projekts ist die Schaffung eines umfassenden Monitoring-Tools, das eine Vielzahl von Funktionen bietet, darunter Datenaufzeichnung, Protokollierung, Visualisierung und Analyse der CAN-Daten in Echtzeit. Damit können Benutzer den Status des Netzwerks überwachen, Fehlfunktionen erkennen und die Systemleistung optimieren.
 
-
+#pagebreak()
 == Projektziele
 
 Die Hauptziele des Projekts sind wie folgt:

@@ -209,7 +209,7 @@
   }
 
   // Main body.
-  set block(above: 1.5em, below: 1em) //heading space
+  set block(above: 1.6em, below: 1em) //heading space
   set par(justify: true)
   set page(number-align: center, margin: (top: 120pt, bottom: 80pt),header: getHeader(authors.at(0).name))
 
