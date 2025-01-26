@@ -36,6 +36,7 @@ Dise werden Darauf hin Von einem Hook Im #acr("JS") aufgefasst und verarbeited.
 Die Verarbeitung gestllted sic darin, dass man für jede #acr("IPC") Addresse eine Funtion Angiebt,
 die aufgerufen werden soll, sobald eine Nachrich mit diesm Typ dedektirt wurde.
 
+#pagebreak()
 == Laufwege in der WebApp und Electron
 Grundlegend besteht die Aufgabe darin, ein sogennantes #acr("CAN") Daten Paket zu empfangen, und dieses dann anzuzeigen.
 Ein solches Paket ist wie folgt aufgebaut:
@@ -47,19 +48,27 @@ Ein solches Paket ist wie folgt aufgebaut:
     table.header([*Field*], [*Length (bits)*], [*Description*]),
     [Identifier],
     [11 (Standard) / 29 (Extended)],
-    [The message identifier, which determines the priority of the message. In extended format, it is 29 bits.],
+    [Bestimmt die wichtigkeit und priorität.],
 
     [RTR (Remote Transmission Request)],
     [1],
-    [Indicates if the frame is a data frame or a remote frame (request for data).],
+    [Zeigt an, ob es sich um einen Daten-Frame oder einen Remote-Frame (Anforderung von Daten) handelt.],
 
     [IDE (Identifier Extension Bit)],
     [1],
-    [In extended frames, this bit is set to 1 to indicate the use of a 29-bit identifier.],
+    [Bei erweiterten Rahmen wird dieses Bit auf 1 gesetzt.],
 
-    [#acr("DBC") (Data Length Code)], [4], [Specifies the length of the data field (in bytes, 0–8 bytes).],
-    [Data], [0–64 (0–8 bytes)], [The actual data being transmitted (max 8 bytes).],
-    [CRC (Cyclic Redundancy Check)], [15], [Error detection code (used for error checking).],
+    [#acr("DBC") (Data Length Code)],
+    [4],
+    [Gibt die Länge des Datenfeldes an (in Bytes, 0-8 Bytes).],
+
+    [Data],
+    [0–64 (0–8 bytes)],
+    [Die tatsächlich übertragenen Daten (maximal 8 Byte).],
+
+    [CRC (Cyclic Redundancy Check)],
+    [15],
+    [Fehlererkennungscode (wird für die Fehlerprüfung verwendet).],
   ),
 )
 Das Empfangen dieser Frames wird schon vom C++ Native Teil Übernommen. Sobald ein solcher Frame Fertig Empfangen wurde,
@@ -92,7 +101,7 @@ Wen Daten zum Senden bereit stehen, wird das #acr("JS") Objekt zerlegt und an di
 Der tadsächlische sende Prozess lauft dann Asycron und voll automatisch ab. Sobald also ein Slot auf dem Pysischen bus zu verfügung steht, wird der #acr("CAN") Frame gesendet.
 #linebreak()
 #linebreak()
-Im C++ Kerer werden aber nur die Funtionalitäten der Kvaser #acr("API") soweit Absatakert, das es später auch möglich sein wird andere Interfaces zu unterstützen.
+Im C++ Kern werden aber nur die Funtionalitäten der Kvaser #acr("API") soweit Absatakert, das es später auch möglich sein wird andere Interfaces zu unterstützen.
 Die tadsächlische einteilungen in Logische objekte wir mittels #acr("TS") realisert, da dadurch einene Integration in das Große System stark vereinfacht wird.
 Alles zusammen wird in einem Node Pakt ausgeliefert, welche schon für die gängisten Betriebessteme und Architekurten Vorkopilerit wurde, was eine einbundungs sehr Angemen gestalted.
 Für die Electron Anwändun sieht das gesmmte Paket aus wie jedes andere Node Paket.
