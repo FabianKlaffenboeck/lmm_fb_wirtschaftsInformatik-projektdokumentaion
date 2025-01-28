@@ -11,45 +11,22 @@ Formuliere das übergeordnete Ziel des Projekts. Was soll mit diesem Projekt err
 Achte darauf, dass das Ziel konkret und messbar ist.
 
 == Teilziele und konkrete Ergebnisse
-Die Hauptziehle dieser Proketarbeit sind wie folgt:
+Die Hauptziele dieser Projektarbeit sind wie folgt:
 
 === Erwerbung von Node-Native Kenntnissen
-Da moderne Web Systeme es erlauben mit vergleichweise wenig aufwand, einer optisch sehr anprechende UI/#acr("UX") zu realieren,
-wird dise in zukunft immer wichtiger.
-Da moderen Web Technologie darauf basiert das das Inetrface in einer Abgekapselten Sandbox (der Sogenannten V8) agiert,
-ist es von hausaus nicht vorgesehen auf wieferlegend Hardware zuzugreifen. Um dies allerding zu ermöglichen, muss mittels Node-Native
-die Brücke geschlossen werden.
-Node-Native erlauft es mittels der Sogenannten NAPI, C++ Code in die V8 einzubinden,
-der dann wie jedes andere Node Modul in #acr("JS") ausgeführt werden kann.
+Da moderne Websysteme es erlauben, mit vergleichsweise wenig Aufwand eine optisch sehr ansprechende #acr("UI")/#acr("UX") zu realisieren,wird diese in zukunft immer wichtiger.Da moderne Webtechnologie darauf basiert, dass das Interface in einer abgekapselten Sandbox (der sogenannten V8) agiert,ist es von Haus aus nicht vorgesehen, auf widerlegende Hardware zuzugreifen? Um dies allerdings zu ermöglichen, muss mittels Node-Nativedie Brücke geschlossen werden.Node-Native erlaubt es mittels der sogenannten NAPI, C++-Code in die V8 einzubinden.der dann wie jedes andere Node-Modul in #acr("JS") ausgeführt werden kann.
 
 === Entwicklung mit React/Electron
-Webentwicklung ist heutzutage nicht wer wegzudenken, und werlaubt eine denkbar einfache erstellung von Userinterfaces.
-Da es allerding nicht immer sinnvoll, geschweige denn zumitbar ist immer eine Website aufzurufen,
-muss die App irgendwie "Instalierbar" werden. Dies wird mittels Electron ermöglicht, da die "Website" in deisem fall mittels V8 in eienr abgekapselten App
-angezeigt wird. Dies ermöglich alle Techniken der Web-welt, mit hardware treibern zu intigrieren.
+Webentwicklung ist heutzutage nicht wegzudenken und erlaubt eine denkbar einfache Erstellung von Userinterfaces.Da es allerdings nicht immer sinnvoll, geschweige denn zumutbar ist, immer eine Website aufzurufen,muss die App irgendwie „installierbar" werden. Dies wird mittels Electron ermöglicht, da die „Website" in diesem Fall mittels V8 in einer abgekapselten Appangezeigt wird. Dies ermöglicht alle Techniken der Web-Welt, mit Hardwaretreibern zu integrieren.
 
 === Prototyp für Vector Canalyzer alternative
-das Programme Canalyzer der Firma Vector ist aktuell neben INCA von ETAS das beliebstse tool um mit Canbus zu arbeiten.
-Allering verlang Vector sehr hohe lizenzgebüren mit unteren 4 stelligen bereich pro Lizent,
-und damit ist diese Tool Landschaft kaum zugänglich für Hobbyentwickler oder Kleinstfirmen. Genau für dise Kunden ist dises Projekt gedacht.
-Hobby Lizenzen stehen zur Freien verfügung, und auch die Busines Lizenzen sollen erschwindlich bleiben.
-Zudem wird der Sorcecode für die UI zur freien verfügung auf GitHub stehen, was es anderen erlaubt auf disen Grundlagen aufzubauen.
+Webentwicklung ist heutzutage nicht das Programm Canalyzer“r der Firma Vector. Es ist aktuell neben INCA von ETAS das beliebteste Tool, um mit Canbus zu arbeiten.Allerdings verlangt Vector sehr hohe Lizenzgebühren im unteren vierstelligen Bereich pro Lizenz.und damit ist diese Tool-Landschaft kaum zugänglich für Hobbyentwickler oder Kleinstfirmen. Genau für diese Kunden ist dieses Projekt gedacht.Hobbylizenzen stehen zur freien Verfügung, und auch die Businesslizenzen sollen erschwinglich bleiben.Zudem wird der Sourcecode für die UI zur freien Verfügung auf GitHub stehen, was es anderen erlaubt, auf diesen Grundlagen aufzubauen. wegzudenken und erlaubt eine denkbar einfache Erstellung von Userinterfaces.Da es allerdings nicht immer sinnvoll, geschweige denn zumutbar ist, immer eine Website aufzurufen,muss die App irgendwie „installierbar" werden. Dies wird mittels Electron ermöglicht, da die „Website" in diesem Fall mittels V8 in einer abgekapselten Appangezeigt wird. Dies ermöglicht alle Techniken der Web-Welt, mit Hardwaretreibern zu integrieren.
 
 == Methoden und Vorgehensweise
-Im Projekt wird mit der Agilen Entwicklungsmethode Scrum gearbeited.
-Dieser ansatz wurde gewählt, um möglichst schnell feedback zum aktuellen entwichlungstand zu bekommen,
-und um auf Kundenwünsche dynamisch eingehen zu können. Darüber hinaus ermöglicht die Entwicklung mittels Scrum auch eine Natlose dokumentation mittels
-Ticket, da jeder Arbeitschritt immer im vorhinein als Ticket angelegt, und dann erst vonn einem Entwickler bearbeited wird.
+Im Projekt wird mit der agilen Entwicklungsmethode Scrum gearbeitet.Dieser Ansatz wurde gewählt, um möglichst schnell Feedback zum aktuellen Entwicklungsstand zu bekommen.und um auf Kundenwünsche dynamisch eingehen zu können. Darüber hinaus ermöglicht die Entwicklung mittels Scrum auch eine nahtlose Dokumentation mittelsTicket, da jeder Arbeitsschritt immer im Vorhinein als Ticket angelegt und dann erst von einem Entwickler bearbeitet wird.
 
 === Feststellen der Anforderungen
-Im vorhinen wurde eine Anforderungsanalyse erstellt, in der die Ziehlgruppe, und somit auch sätere Anwendere befragt wurden.
-Die befragung beinhaltete eine bestandsaufnahme der aktuell am Markt vohandenen Lösungen, und deren Vor und Nachteile.
-Ebenfals wurden Wüsche und verbessungsvorschäge der Ziehlgruppe Festgehalten und dokumentiert, woraufhin ein eine Vision ausgearbeited wurde.
-Mittels Wireframe Diagram und Analogen mehoden der Visuellen Prototypen Entwichlung (Stift und Papier), wurde wieder unter einbeziehung der Späteren Anwendere
-Ein modell, samt Userinterface festgelegt.
+Im Vorhinein wurde eine Anforderungsanalyse erstellt, in der die Zielgruppe und somit auch spätere Anwender befragt wurden.Die Befragung beinhaltete eine Bestandsaufnahme der aktuell am Markt vorhandenen Lösungen und deren Vor- und Nachteile.Ebenfalls wurden Wünsche und Verbesserungsvorschläge der Zielgruppe festgehalten und dokumentiert, woraufhin eine Vision ausgearbeitet wurde.Mittels Wireframe-Diagramm und analogen Methoden der visuellen Prototypenentwicklung (Stift und Papier) wurde wieder unter Einbeziehung der späteren AnwenderEin Modell samt Userinterface festgelegt.
 
 == Erwartete Auswirkungen und Nutzen
-Da es sich bei deisem Prokelt um die Prototypen entwichlung für ein späteres Produkt handelt,
-wird ein besonderes Augenmerk auf die sessons-learned gelegt, um es der Späteren Entwicklung so leicht wie möglich zu machen ein fertiges
-hardware-Software Produkt auf den Markt zu bringen.
-Somit dient das Resultat der Proketarbeit als Grundlage für eine Folgenede Entwichlung einses Vollwertigen Produktes.
+Da es sich bei diesem Prototyp um die Prototypenentwicklung für ein späteres Produkt handelt,wird ein besonderes Augenmerk auf die sessions learned gelegt, um es der späteren Entwicklung so leicht wie möglich zu machen, ein fertigesHardware-Software-Produkt auf den Markt zu bringen.Somit dient das Resultat der Projektarbeit als Grundlage für eine folgende Entwicklung eines vollwertigen Produktes.

@@ -14,8 +14,8 @@
   "JS": ("JavaScript", "x"),
   "TS": ("TypeScript", "x"),
   "IDE": ("Integrated Development Environment", "x"),
-  "NPM": ("Node Paket Manager", "x"),
-  "NPX": ("Node Paket Executor", "x"),
+  "NPM": ("Node Packet Manager", "x"),
+  "NPX": ("Node Packet Executor", "x"),
   "API": ("Application Programming Interface", "x"),
   "IPC": ("inter process communication", "x"),
   "DLC": ("Data length Code", "x"),
@@ -25,13 +25,11 @@
 )
 
 #let abstract = [
-  In diesem Projekt wird ein performantes CanBus Tool entwickelt, wälches in seiner Funtionalität bereits exestriender lösungen, zb von Vector ähnelt.
-  Dabei steht allerdings die Kostenefizienz im Vordergrung, da Ählichte Tools sehr Preisintensiv sind.
-  Die Implementierung erfolgt unter Verwendung moderner Webtechnologien, einschließlich React für die Benutzeroberfläche, Node native für die Komunitaion mit der Hardware und Electron für die plattformübergreifende Desktop-Anwendung. Ziel des Projekts ist es, eine benutzerfreundliche, intuitive Oberfläche zu schaffen, die es Nutzern ermöglicht, CanBus Daten einfach zu visualisieren, zu analysieren und zu schicken.
+  In diesem Projekt wird ein performantes CanBus Tool entwickelt, welches in seiner Funktionalität bereits existierender Lösungen, zb von Vector ähnelt. Dabei steht allerdings die kosten Effizienz im Vordergrund, da Ähnliche Tools sehr Preisintensiv sind. Die Implementierung erfolgt unter Verwendung moderner Webtechnologien, einschließlich React für die Benutzeroberfläche, Node native für die Kommutation mit der Hardware und Electron für die plattformübergreifende Desktop-Anwendung. Ziel des Projekts ist es, eine benutzerfreundliche, intuitive Oberfläche zu schaffen, die es Nutzern ermöglicht,
 ]
 
 #show: project.with(
-  title: "CAN-Monitoring Tool mit Web Technilogien",
+  title: "CAN-Monitoring Tool mit Web Technologie",
   authors: (
     (
       name: "Fabain Klaffenboeck",

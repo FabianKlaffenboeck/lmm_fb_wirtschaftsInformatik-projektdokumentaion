@@ -40,7 +40,7 @@ Nachdem einige Programme gelöscht und neu Installiert wurden, ließ sich aber a
 Die Wahl der #acr("IDE") ist, nach kurzer überlegung, auf die Produkte von JetBrains gefallen. Der Hauptgrund dafür war meine jahre lange Erfahren mit genau diesen Produkten, da JetBrains der Marktführer ist, auch im Professionellen Umfeld verwendet wird. Nachführend wurden nocheinmal die spezifischen IDEs, auf die schlussendlich die Wahl gefallen ist, erläutert.
 
 === Für Node Native (C)
-JetBrains Lösung für den C Stack nennt sich CLion. Dabei handelt es sich im eine hooch performante #acr("IDE"). Installiert wurde dieses Tool über die so genante JetBrains Toolbox. Diese ist ein Client, der das Installieren und Konfigurieren übernimmt.
+JetBrains Lösung für den C Stack nennt sich CLion. Dabei handelt es sich im eine hoch performante #acr("IDE"). Installiert wurde dieses Tool über die so genante JetBrains Toolbox. Diese ist ein Client, der das Installieren und Konfigurieren übernimmt.
 Um das die C Codebase perfekt zu organisieren, und voraltem damit damit das Code-Highlighting funktioniert, war es nötig Node-Cmake via #acr("NPM") zu installieren.
 #linebreak()
 Kompiliert wird der gesamte Nativ-teil mit dem so genanten Node-GYP Tool. Selbiges würde ebenfalls über #acr("NPM") Installiert und bildet die Schnittelle zum Visual Studio 2022 Compiler. Node-GYP kümmert sich dabei darum das alle Dependencies die die spätere NodeJs runtime benötigt inkludiert sind, und das die NAPI header richtig sind. #linebreak()
