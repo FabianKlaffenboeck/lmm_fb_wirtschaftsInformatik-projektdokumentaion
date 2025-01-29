@@ -11,5 +11,5 @@ Wen es um die Kommunikation mit Potenziellen kunden oder auch Endanwendern geht,
 das es extrem wichtig ist, Ideen grafisch darzustellen,
 und sie anhand von Diagrammen und Aalaufdiagrammen erklären zu können.
 
-== Zukunft des Prokeltes
+== Zukunft des Projektes
 Auf Basis von aktueller Nachfrage, sieht es aktuell so aus, dass ApolloLink im Markt einen positiven anklang finden wird, un sich somit auch gegenüber anaderer Hersteller Behaupten kann. Natürlich ist es ohne konkrete Zahlern schwer zu sagen wie das Produkt wirklich ankommen wird, aber das Team ist guter Dinge.
