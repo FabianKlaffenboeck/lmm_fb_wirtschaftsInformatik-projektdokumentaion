@@ -10,7 +10,6 @@ Die Projekt Besprechung fand am 28.10.2024 um 18:10 statt, dabei würde der aktu
 Die Präsentation umfasste das Vorzeigen des Node-Native Teils und einer Vorstellung der React-Electron App.
 Zudem wurde der Vorschritt im Bezug auf die Projekt-Dokumentation erläutert, und vorgezeigt.
 
-#linebreak()
 Dabei wurden folgende Maßnahmen beschlossen:
 #list([Keine Maßnahmen notwendig])
 
@@ -18,7 +17,6 @@ Dabei wurden folgende Maßnahmen beschlossen:
 Die Projekt Besprechung  fand am 02.12.2024 nach dem vortragsteil, im Übungsteil stat. Dabei würde der aktuelle Projektvorschritt vorgestellt.
 Die Präsentation umfasste das Vorzeigen des Electron/React Frontends und der Dokumentation.
 
-#linebreak()
 Dabei wurden folgende Maßnahmen beschlossen:
 #list([Keine Maßnahmen notwendig])
 
@@ -27,6 +25,5 @@ Dabei wurden folgende Maßnahmen beschlossen:
 Die Projekt Besprechung fand am 28.01.2025 zum abschluss des Projektes statt.
 Gezeigt wurde nocheinmal der kompltte Projektstan, inklusive der demo-funtion. 
 
-#linebreak()
 Dabei wurden folgende Maßnahmen beschlossen:
 #list([Projekt kann abgegeben werden])
