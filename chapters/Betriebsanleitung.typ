@@ -74,3 +74,11 @@ Der Node Name sollte kurz und prägnant sein, um die Auflistung übersichtlich z
 #acr("DBC")-Dateien können mittels eines Klicks auf "Add DBC" ausgewählt und hochgeladen werden.
 Der Name kann nachträglich noch verändert werden allerdings wird ebenso davon abgeraten, da es zu Verwirrungen oder Verwechslungen kommen kann,
 sollte eine ähnliche Datei noch auf dem PC des Anwenders vorhanden sein.
+
+#pagebreak()
+== Download und Verfügbarkeit
+
+Das Tool ApolloLink steht jetzt unter "https://ewolvelabs.com/posts/" zum Download bereit. Aktuell handelt es sich jedoch um eine Alpha-Version, die noch in der Entwicklung steckt. Das bedeutet, dass das Tool zwar erste grundlegende Funktionen bietet, aber noch nicht in seiner endgültigen und stabilen Form vorliegt. Nutzer sollten daher damit rechnen, dass es noch zu Fehlern und Instabilitäten kommen kann.
+#linebreak()
+Die Alpha-Version ermöglicht es bereits, einige der geplanten Features zu testen, allerdings ist sie noch nicht ausgereift. Das Entwicklerteam hat sich entschieden, diese frühe Version zur Verfügung zu stellen, um wertvolles Feedback von der Community zu erhalten und das Tool kontinuierlich zu verbessern. Aufgrund der noch laufenden Entwicklung wird die Nutzung auf eigene Verantwortung empfohlen.
+
