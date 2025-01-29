@@ -13,7 +13,8 @@
         rows: (0pt, 0pt),
         gutter: (8pt),
         align(bottom, datetime.today().display("Linz, [day].[month].[year]")),
-        align(bottom, image("../images/unterschrift.png", height: 15pt)),
+        align(bottom, datetime.today().display("")),
+        // align(bottom, image("../images/unterschrift.png", height: 15pt)),
         overline(extent: 20pt,offset: -10pt,[Ort, Datum]),
         overline(extent: 20pt,offset: -10pt,[Unterschrift]),
     ))
