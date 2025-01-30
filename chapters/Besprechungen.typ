@@ -14,7 +14,7 @@ Dabei wurden folgende Maßnahmen beschlossen:
 #list([Keine Maßnahmen notwendig])
 
 == Besprechung vom 02.12.2024
-Die Projekt Besprechung  fand am 02.12.2024 nach dem vortragsteil, im Übungsteil stat. Dabei würde der aktuelle Projektvorschritt vorgestellt.
+Die Projekt Besprechung  fand am 02.12.2024 nach dem Vortragsteil, im Übungsteil statt. Dabei wurde der aktuelle Projektvorschritt vorgestellt.
 Die Präsentation umfasste das Vorzeigen des Electron/React Frontends und der Dokumentation.
 
 Dabei wurden folgende Maßnahmen beschlossen:
@@ -22,8 +22,8 @@ Dabei wurden folgende Maßnahmen beschlossen:
 
 
 == Besprechung vom 27.01.2025
-Die Projekt Besprechung fand am 28.01.2025 zum abschluss des Projektes statt.
-Gezeigt wurde nocheinmal der kompltte Projektstan, inklusive der demo-funtion. 
+Die Projekt Besprechung fand am 28.01.2025 zum Abschluss des Projektes statt.
+Gezeigt wurde noch einmal der kompltte Projektstand, inklusive der demo-funtion. 
 
 Dabei wurden folgende Maßnahmen beschlossen:
 #list([Projekt kann abgegeben werden])
