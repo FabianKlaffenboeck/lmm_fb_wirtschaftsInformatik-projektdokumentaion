@@ -53,7 +53,7 @@ Abgerundet wird das Stack von Vite als build Framework, und Electron als Laufzei
 Beide Systeme sind vielseitig im Einsatz und aufgrund ihrer Verbreitung top getestet.
 Da die genannten Technologien aus den Web-bereich kommen, und diese nicht auf die Hardwareebene zugreifen können,
 musste noch eine Node-Native Erweiterung für die V8 Engine von Electron bereitgestellt werden.
-Diese Erweiterung greift über NAPI auf die V8 Engine zu, und ist in C++ geschrieben.
+Diese Erweiterung greift über #acr("NAPI") auf die V8 Engine zu, und ist in C++ geschrieben.
 Die Tatsache, dass das Plugin in C++ geschrieben ist, ermöglicht es seinerseits auf die,
 von Kvaser bereitgestellte, #acr("API") der #acr("CAN")-Bus zu USB-Wandler zuzugreifen.
 

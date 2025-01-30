@@ -20,10 +20,10 @@ Key Activities:
     Definieren des Sprint Goal: Der Product Owner schlägt vor, wie das Produkt im Laufe des Sprints an Wert gewinnen könnte. Das Team arbeitet zusammen, um ein Sprint Goal zu definieren, das diesen Wert den Stakeholdern kommuniziert.
   ],
   [
-    Auswählen von Product Backlog Items: Die Entwickler wählen Elemente aus dem Product Backlog aus, die in den Sprint aufgenommen werden sollen. Diese Auswahl basiert auf der bisherigen Leistung, der Kapazität und der Definition von Done
+    Auswählen von Product Backlog Items: Die Entwickler wählen Elemente aus dem Product Backlog aus, die in den Sprint aufgenommen werden sollen. Diese Auswahl basiert auf der bisherigen Leistung, der Kapazität und der Definition of Done
   ],
   [
-    Planen der Arbeit: Die Entwickler planen, wie sie die ausgewählten Product Backlog-Elemente in Wertzuwächse umwandeln, indem sie sie in kleinere Aufgaben zerlegen1
+    Planen der Arbeit: Die Entwickler planen, wie sie die ausgewählten Product Backlog-Elemente in Wertzuwächse umwandeln, indem sie sie in kleinere Aufgaben zerlegen.
   ],
 )
 
@@ -170,7 +170,7 @@ mindmap
   [*AP-Inhalt* (Was soll getan werden?):
     #list([#acr("DBC") Parser einbinden])],
   [*AP-Nicht-Inhalte* (Was soll nicht getan werden?):
-    #list([Enbindung und Visualisirung einer #acr("DBC") Datei im gesammten System])],
+    #list([Einbindung und Visualisirung einer #acr("DBC") Datei im gesammten System])],
   [*AP-Ergebnisse* (Was liegt nach Beendigung des Arbeitspaketes vor?):
     #list([#acr("DBC") Dateien können hochgeldaen werden, und sind übersichtlich zu verwalten, im hintergrund werden JS modelle erstellt, die im Code verwendet werden können.])]
 )
