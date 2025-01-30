@@ -5,8 +5,8 @@
 == Einleitung
 
 In der heutigen vernetzten Welt spielen Kommunikationssysteme eine entscheidende Rolle in der Automatisierung, im Automotive und in Industrial Anwendungen.
-Eines der am häufigsten verwendeten Standards für die Kommunikation zwischen Steuergeräten in Fahrzeugen und anderen Geräten ist der #acr("CAN")-Bus.
-Seit der Erfindung von Bosch, ist der #acr("CAN")-Bus vorallem im Automotive Bereich zu finden, wird aber auch vermehrt in andrehen Industrie Bereichen eingesetzt.
+Einer der am häufigsten verwendeten Standards für die Kommunikation zwischen Steuergeräten in Fahrzeugen und anderen Geräten ist der #acr("CAN")-Bus.
+Seit der Erfindung von Bosch, ist der #acr("CAN")-Bus vor allem im Automotive Bereich zu finden, wird aber auch vermehrt in anderen Industrie Bereichen eingesetzt.
 Darauf aufbauend gibt es, Protokolle wie #acr("CAN")-XCP, #acr("CAN")-Open und viele mehr.
 
 Das #acr("CAN")-Bussystem ermöglicht die Interaktion mehrerer ECUs über ein gemeinsames Kommunikationsmedium. Diese Fähigkeit zum Datenaustausch ist für moderne Fahrzeuge von entscheidender Bedeutung, da sie zahlreiche elektronische Funktionen koordinieren, darunter Motorsteuerung, Bremsen, Fahrerassistenzsysteme und Infotainment. Die Integration dieser Systeme bringt jedoch auch Herausforderungen mit sich, insbesondere in Bezug auf Fehlerbehebung, Leistungsüberwachung und Datenanalyse. Hier kommt das CAN-Bus-Überwachungstool ins Spiel, das diese Herausforderungen bewältigen und die Effizienz und Zuverlässigkeit von CAN-Netzwerken verbessern soll.
@@ -46,13 +46,13 @@ Die Hauptziele des Projekts sind wie folgt:
 
 == Technologischer Rahmen
 
-Die Entwicklung des #acr("CAN")-Bus Monitoring Tools wird durch einen, vorallem aus dem Web bereich bekannten und hoch modernen Technologie-stack unterstützt.
+Die Entwicklung des #acr("CAN")-Bus Monitoring Tools wird durch einen, vor allem aus dem Web Bereich bekannten und hoch modernen Technologie-Stack unterstützt.
 Im Detail ist die reden von React, da es top Performanz, und einfach in der Strukturierung ist.
 Als Komponenten #acr("LIB") kommt ShadCn aufgrund seines modernen Aussehens und der Verfügbarkeit des Source-Codes, was Anpassungen vereinfacht.
-Abgerundet wird der Stack von Vite als build Framework, und Electron als Laufzeit Umgebung.
+Abgerundet wird das Stack von Vite als build Framework, und Electron als Laufzeit Umgebung.
 Beide Systeme sind vielseitig im Einsatz und aufgrund ihrer Verbreitung top getestet.
 Da die genannten Technologien aus den Web-bereich kommen, und diese nicht auf die Hardwareebene zugreifen können,
-musste noch eine Node-Native Erweiterung für die V8 Engine von Electron bereit gestellt werden.
+musste noch eine Node-Native Erweiterung für die V8 Engine von Electron bereitgestellt werden.
 Diese Erweiterung greift über NAPI auf die V8 Engine zu, und ist in C++ geschrieben.
 Die Tatsache, dass das Plugin in C++ geschrieben ist, ermöglicht es seinerseits auf die,
 von Kvaser bereitgestellte, #acr("API") der #acr("CAN")-Bus zu USB-Wandler zuzugreifen.

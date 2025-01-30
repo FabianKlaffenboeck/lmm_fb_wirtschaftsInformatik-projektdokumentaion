@@ -1,7 +1,7 @@
 #import "../templates/acronyms.typ": acr
 
 = Betriebsanleitung
-In den folgenden Unterkapiteln wird auf die Verwendung und Konfiguration des Tools ApolloLink eingegangen. Es wird empfohlen, das Programm zusätzlich zu dieser Kurzanleitung zu öffnen und die folgenden Schritte durchzugehen. Die Benutzerführung ist möglichst einfach gestaltet; sollte es trotzdem zu Fragen kommen, wird empfohlen, auf diese Beschreibung zurückzugreifen.
+In den folgenden Unterkapiteln wird auf die Verwendung und Konfiguration des Tools ApolloLink eingegangen. Es wird empfohlen, das Programm zusätzlich zu dieser Kurzanleitung zu öffnen und die folgenden Schritte durchzugehen. Die Benutzerführung ist möglichst einfach gestaltet, sollte es trotzdem zu Fragen kommen, wird empfohlen, auf diese Beschreibung zurückzugreifen.
 
 #pagebreak()
 == Erste Blick und Übersicht über das Tool.

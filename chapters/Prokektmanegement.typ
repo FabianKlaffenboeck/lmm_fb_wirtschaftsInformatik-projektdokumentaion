@@ -2,17 +2,17 @@
 #import "@preview/acrostiche:0.3.3": *
 #import "../templates/acronyms.typ": acr
 
-= Prokektmanegement
-Um bei desiem Projekt am zahn der zeit zu belieben, wird die weit verbreite und moderne Projekt management methode Scrum gesetzt. Es wurde ien Entwichlungszeitraum von je 3 Wochen fixirt, wobei bei Problemen der Therminfinung mit Stakeholdern teils auch auch einen 4 Wöchugen Zyklus ausgewichen wurde. #linebreak()
-Bei der umsetztung von Scrum wurde sich aufgrund des sehr kleinen Entwicklerteams nur auf Planing und Review beschränkt. #linebreak()
+= Projektmanagement
+Um bei diesem Projekt am Zahn der Zeit zu belieben, wird die weit verbreite und moderne Projekt Management Methode Scrum gesetzt. Es wurde ein Entwicklung Zeitraum von je 3 Wochen fixiert, wobei bei Problemen der Terminierung mit Stakeholdern teils auch einen 4-wöchigen Zyklus ausgewichen wurde. #linebreak()
+Bei der Umsetzung von Scrum wurde sich aufgrund des sehr kleinen Entwicklerteams nur auf Planung und Review beschränkt. #linebreak()
 
 == Scrum Events
 
 === Planing
 Zweck: #linebreak()
-In diesem Event wird definirt was in dem Jeweiligen sprinte erreicht werden soll, dazu werden so genannte Tickets Erstellt, welches dann dem jeweiligen Entwichler zugewieden werden kann. #linebreak()
+In diesem Event wird definiert was in dem Jeweiligen sprinte erreicht werden soll, dazu werden so genannte Tickets Erstellt, welches dann dem jeweiligen Entwickler zugewiesen werden kann. #linebreak()
 Teilnehmer: #linebreak()
-Damit deises Meeting Produktiv abgehalten werden kann sollten allen voran sämtliche Entwichler und #acr("PO") anwesend sein.
+Damit dieses Meeting Produktiv abgehalten werden kann sollten allen voran sämtliche Entwickler und #acr("PO") anwesend sein.
 #linebreak()
 Key Activities:
 #list(
@@ -29,9 +29,9 @@ Key Activities:
 
 === Review
 Zweck: #linebreak()
-In deisem Meeting wird zusammen mit allen steakholdern der akteulle Entwicklungschrit begutachted, und Feedback eingeholt. Zudem wird der Produkt Backlog angepasst, bassierend auf dem Egebnis dieses Meetings. Um dies zu erreichen, stellen die Entwichler den aktuelle stand vor.
+In diesem Meeting wird zusammen mit allen Stakeholdern der aktuelle Entwicklungsschritt begutachtend, und Feedback eingeholt. Zudem wird der Produkt Backlog angepasst, basierend auf dem Ergebnis dieses Meetings. Um dies zu erreichen, stellen die Entwickler den aktuelle stand vor.
 Teilnehmer: #linebreak()
-Anwesend sein sollte das gesammte Scrum team, und alle key Stakeholder inkusive des #acr("PO").
+Anwesend sein sollte das gesamte Scrum Team, und alle Key Stakeholder inklusive des #acr("PO").
 
 #pagebreak()
 
@@ -44,7 +44,9 @@ Anwesend sein sollte das gesammte Scrum team, und alle key Stakeholder inkusive 
     columns: (1fr, 1fr),
     inset: 10pt,
     align: left,
-    [Projektstartereignis: #list([Abklärung der Funtionne mit Ziehlgruppe])], [Projektstarttermin: #list([16.10.2024])],
+    [Projektstartereignis: #list([Abklärung der Funktionalitäten mit Ziehlgruppe])],
+    [Projektstarttermin: #list([16.10.2024])],
+
     [Inhaltliches Projektendereignis: #list([Testveröffentlichung auf GitHub])],
     [Projektendtermine: #list([25.01.2025])],
 
@@ -116,11 +118,11 @@ mindmap
     rotate(-90deg, reflow: true)[*PSP-Code, AP-Bezeichnung*],
   ),
   [*AP-Inhalt* (Was soll getan werden?):
-    #list([Basich layout erstellen])],
+    #list([Basic layout erstellen])],
   [*AP-Nicht-Inhalte* (Was soll nicht getan werden?):
-    #list([Tieflegende funtionen implementieren])],
+    #list([Tiefliegende funtionen implementieren])],
   [*AP-Ergebnisse* (Was liegt nach Beendigung des Arbeitspaketes vor?):
-    #list([Ein grundlegendes user interface ist erkennbar])]
+    #list([Ein grundlegendes #acr("UI") ist erkennbar])]
 )
 
 #table(
@@ -148,11 +150,11 @@ mindmap
     rotate(-90deg, reflow: true)[*PSP-Code, AP-Bezeichnung*],
   ),
   [*AP-Inhalt* (Was soll getan werden?):
-    #list([daten einträge sollen löschbar sein])],
+    #list([Dateneinträge sollen löschbar sein])],
   [*AP-Nicht-Inhalte* (Was soll nicht getan werden?):
     #list([Disableing wen #acr("CAN") verwendet wird])],
   [*AP-Ergebnisse* (Was liegt nach Beendigung des Arbeitspaketes vor?):
-    #list([Die user-experidende wird verbessert, da daten gelöscht werden können die ihrtümlich erstellt wurden.])]
+    #list([Die #acr("UX") wird verbessert, da Daten gelöscht werden können die irrtümlich erstellt wurden.])]
 )
 
 #pagebreak()
@@ -168,9 +170,9 @@ mindmap
   [*AP-Inhalt* (Was soll getan werden?):
     #list([#acr("DBC") Parser einbinden])],
   [*AP-Nicht-Inhalte* (Was soll nicht getan werden?):
-    #list([Enbindung und Visualisirung einer #acr("DBC") datei ind das gesammt System])],
+    #list([Enbindung und Visualisirung einer #acr("DBC") Datei im gesammten System])],
   [*AP-Ergebnisse* (Was liegt nach Beendigung des Arbeitspaketes vor?):
-    #list([#acr("DBC") Dateien können hochgeldaen werden, und sind übersichtlich zu werwalten, im hintergrund werden JS modelle erstellt, die im Code verwendet werden können.])]
+    #list([#acr("DBC") Dateien können hochgeldaen werden, und sind übersichtlich zu verwalten, im hintergrund werden JS modelle erstellt, die im Code verwendet werden können.])]
 )
 
 #table(
@@ -182,9 +184,9 @@ mindmap
     rotate(-90deg, reflow: true)[*PSP-Code, AP-Bezeichnung*],
   ),
   [*AP-Inhalt* (Was soll getan werden?):
-    #list([Erstellen neuer Cards soll im Lineken menü möglich sein.])],
+    #list([Erstellen neuer Cards soll im Linkedn menü möglich sein.])],
   [*AP-Nicht-Inhalte* (Was soll nicht getan werden?):
-    #list([Enable und Diasble bassirend auf bus Status])],
+    #list([Enable und Diasble basierend auf Bus-Status])],
   [*AP-Ergebnisse* (Was liegt nach Beendigung des Arbeitspaketes vor?):
     #list([Neue Karten sollen bequem erstellt werden können.])]
 )
@@ -198,9 +200,9 @@ mindmap
     rotate(-90deg, reflow: true)[*PSP-Code, AP-Bezeichnung*],
   ),
   [*AP-Inhalt* (Was soll getan werden?):
-    #list([Settings seite erstellen])],
+    #list([Settings page erstellen])],
   [*AP-Ergebnisse* (Was liegt nach Beendigung des Arbeitspaketes vor?):
-    #list([alle einstellungen sollen übersichtlich verwaltbar sein.])]
+    #list([alle Einstellungen sollen übersichtlich verwaltbar sein.])]
 )
 
 #pagebreak()
@@ -214,7 +216,7 @@ mindmap
     rotate(-90deg, reflow: true)[*PSP-Code, AP-Bezeichnung*],
   ),
   [*AP-Inhalt* (Was soll getan werden?):
-    #list([hinzufügen von Shadcn/ui])],
+    #list([Hinzufügen von Shadcn/ui])],
   [*AP-Nicht-Inhalte* (Was soll nicht getan werden?):
     #list([Einbindung in die #acr("UI")])],
   [*AP-Ergebnisse* (Was liegt nach Beendigung des Arbeitspaketes vor?):
@@ -230,11 +232,11 @@ mindmap
     rotate(-90deg, reflow: true)[*PSP-Code, AP-Bezeichnung*],
   ),
   [*AP-Inhalt* (Was soll getan werden?):
-    #list([erstellung einer #acr("CICD") pipeline])],
+    #list([Erstellung einer #acr("CICD") pipeline])],
   [*AP-Nicht-Inhalte* (Was soll nicht getan werden?):
-    #list([aufsetzten von server Infrastruktur])],
+    #list([Aufsetzten von Server Infrastruktur])],
   [*AP-Ergebnisse* (Was liegt nach Beendigung des Arbeitspaketes vor?):
-    #list([nach jedem Commit soll der Linter und Tests ausgeführt werden.])]
+    #list([Nach jedem Commit soll der Linter und Tests ausgeführt werden.])]
 )
 
 #pagebreak()
@@ -250,7 +252,7 @@ mindmap
     [3], [Dynamic-grid ist verfügbar], [14.10.2024], [], [13.10.2024],
     [4], [Node-native #acr("LIB") für Kvaser], [16.11.2024], [], [16.11.2024],
     [5], [Einlesen erster #acr("CAN") Nachrichten], [16.11.2024], [], [16.11.2024],
-    [6], [Settins Page fertigstellung], [23.11.2024], [], [24.11.2024],
+    [6], [Settings Page fertigstellung], [23.11.2024], [], [24.11.2024],
     [7], [#acr("DBC") parsing], [29.11.2024], [], [30.11.2024],
     [8], [Darstellung mittels Grid], [30.11.2024], [], [30.11.2024],
   ),

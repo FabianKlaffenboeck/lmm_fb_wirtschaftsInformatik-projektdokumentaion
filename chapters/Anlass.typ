@@ -38,7 +38,7 @@ Daher ist die Forschungsfrage, ob es möglichn ist, ein solch komplexes Tool mit
 
 == Lernziel und persönliche Entwicklung
 
-Da dies das erste Projekt darstellt, welches ich mit diesem speziellen Tech-Stack realisiere, erhoffe ich mir durch dieses Projekt vor allem einige wichtige Lessons learned. Was für mich von besonderer Bedeutung ist, ist die Einbettung einer C++-Codebase mittels Nodenative in eine Electron-React-Anwendung. Dies ist besonders interessant, da sich dadurch unzählige Verwendungszwecke und die damit verbundenen Projektmöglichkeiten eröffnen.
+Da dies das erste Projekt darstellt, welches Ich mit diesem speziellen Tech-Stack realisiere, erhoffe Ich mir durch dieses Projekt vor allem einige wichtige Lessons learned. Was für mich von besonderer Bedeutung ist, ist die Einbettung einer C++-Codebase mittels Nodenative in eine Electron-React-Anwendung. Dies ist besonders interessant, da sich dadurch unzählige Verwendungszwecke und die damit verbundenen Projektmöglichkeiten eröffnen.
 #linebreak()
 Außerdem ist es sehr spannend, ein Gefühl für die Technologie und deren Vor- und Nachteile zu bekommen. Auch gewinnt die intensive Auseinandersetzung mit dem Electron-Framework zunehmend mehr an Wichtigkeit, da alle Zeichen zurzeit darauf stehen, neue Apps ausschließlich auf Webbasis zu entwickeln, um Netzwerkressourcen besser zum Einsatz zu bringen.
 
