@@ -26,6 +26,9 @@
 )
 
 #let abstract = [
+  In this project, a high-performance CanBus tool is being developed which is similar in its functionality to existing solutions, e.g. from Vector. However, the focus is on cost efficiency, as similar tools are very price-intensive. The implementation uses modern web technologies, including React for the user interface, Node native for the communication with the hardware and Electron for the cross-platform desktop application. The goal of the project is to create a user-friendly, intuitive interface that allows users to easily create measurements.
+  #linebreak()
+  #linebreak()
   In diesem Projekt wird ein performantes CanBus Tool entwickelt, welches in seiner Funktionalität bereits existierender Lösungen, zb von Vector ähnelt. Dabei steht allerdings die Kosten Effizienz im Vordergrund, da Ähnliche Tools sehr Preisintensiv sind. Die Implementierung erfolgt unter Verwendung moderner Webtechnologien, einschließlich React für die Benutzeroberfläche, Node native für die Kommutation mit der Hardware und Electron für die plattformübergreifende Desktop-Anwendung. Ziel des Projekts ist es, eine benutzerfreundliche, intuitive Oberfläche zu schaffen, die es Nutzern ermöglicht, einfach Messungen zu erstellen.
 ]
 
